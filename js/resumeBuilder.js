@@ -1,3 +1,4 @@
+// Skills to be displayed in the bio section
 var skills = ["HTML", "CSS", "Javascript", "jQuery"];
 
 var bio = {
@@ -26,13 +27,13 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#header").append(formattedName);
-		$("#header").append(formattedRole);
-		$("#header").append(formattedMobile);
-		$("#header").append(formattedEmail);
-		$("#header").append(formattedGitHub);
-		$("#header").append(formattedTwitter);
-		$("#header").append(formattedLocation);
+		$("#header").prepend(formattedRole);
+		$("#header").prepend(formattedName);
+		$("#topContacts").append(formattedMobile);
+		$("#topContacts").append(formattedEmail);
+		$("#topContacts").append(formattedGitHub);
+		$("#topContacts").append(formattedTwitter);
+		$("#topContacts").append(formattedLocation);
 		$("#header").append(formattedPic);
 		$("#header").append(formattedMessage);
 		$("#footerContacts").append(formattedMobile);
