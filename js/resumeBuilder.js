@@ -202,3 +202,6 @@ bio.display();
 work.display();
 projects.display();
 education.display();
+
+// Append a map to the page
+$("#mapDiv").append(googleMap);
