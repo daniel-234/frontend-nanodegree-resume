@@ -15,7 +15,7 @@ var bio = {
 	                  "things I've learned. By the way, don't trust everything you read here!",
 	"skills": skills,
 	"biopic": "images/fry.jpg",
-	// display properties of the 'bio' object
+	// Display properties of the 'bio' object
 	display: function() {
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
 		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -74,12 +74,12 @@ var work = {
 		}
 	],
 	display: function() {
+		// Display work experience in div with id=" workExperience"
+		$("#workExperience").append(HTMLworkStart);
 		for (var i = 0; i < work.jobs.length; i++) {
-			// create a new div for every work experience in the jobs array
-			$("#workExperience").append(HTMLworkStart);
 			var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
 			var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title)
-			// concatenate employer and title
+			// Concatenate employer and title
 			var formattedWorkEmployerTitle = formattedWorkEmployer + formattedWorkTitle;
 			var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
 			var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
@@ -92,5 +92,46 @@ var work = {
 	}
 };
 
+var projects = {
+	"projects": [
+		{
+			"start": "2016",
+			"title": "Online resume",
+			"dates": "09/2016 - 10/2016",
+			"description": "This is the second project in the Udacity Front End Nanodegree. " +
+			                "After learning Javascript and jQuery, I built an online resume to " +
+			                "showcase my new wonderful skills.",
+			"images": ["images/online-resume.svg", "images/arcade-game-clone.svg"]
+		},
+		{
+			"start": "2016",
+			"title": "Arcade game clone",
+			"dates": "10/2016 - 11/2016",
+			"description": "This is the third project in the Udacity Front End Nanodegree. " +
+			                "After learning Object Oriented Javascript and HTML5 canvas, I " +
+			                "cloned an arcade game to showcase my new wonderful skills.",
+			"images": ["images/arcade-game-clone.svg", "images/online-resume.svg"]
+		}
+	],
+	display: function() {
+		// Display projects in div with id="projects"
+		$("#projects").append(HTMLprojectStart);
+		for (var i = 0; i < projects.projects.length; i++) {
+			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
+			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+			$(".project-entry:last").append(formattedProjectTitle);
+			$(".project-entry:last").append(formattedProjectDates);
+			$(".project-entry:last").append(formattedProjectDescription);
+			// Iterate through the images array in each project
+			for (var j = 0; j < projects.projects[i].images.length; j++) {
+				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[j]);
+				$(".project-entry:last").append(formattedProjectImage);
+			}
+		}
+	}
+};
+
 bio.display();
 work.display();
+projects.display();
