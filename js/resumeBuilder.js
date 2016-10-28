@@ -26,8 +26,8 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#header").append(formattedName);
 		$("#header").append(formattedRole);
+		$("#header").append(formattedName);
 		$("#header").append(formattedMobile);
 		$("#header").append(formattedEmail);
 		$("#header").append(formattedGitHub);
@@ -35,6 +35,11 @@ var bio = {
 		$("#header").append(formattedLocation);
 		$("#header").append(formattedPic);
 		$("#header").append(formattedMessage);
+		$("#footerContacts").append(formattedMobile);
+		$("#footerContacts").append(formattedEmail);
+		$("#footerContacts").append(formattedGitHub);
+		$("#footerContacts").append(formattedTwitter);
+		$("#footerContacts").append(formattedLocation);
 		if (bio.skills) {
 			$("#header").append(HTMLskillsStart);
 			for (var i = 0; i < bio.skills.length; i++) {
