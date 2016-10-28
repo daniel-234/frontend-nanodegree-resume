@@ -35,10 +35,10 @@ var bio = {
 		$("#header").append(formattedLocation);
 		$("#header").append(formattedPic);
 		$("#header").append(formattedMessage);
-		if (bio["skills"]) {
+		if (bio.skills) {
 			$("#header").append(HTMLskillsStart);
 			for (var i = 0; i < bio.skills.length; i++) {
-				var formattedSkill = HTMLskills.replace("%data%", bio["skills"][i]);
+				var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
 				$("#skills").append(formattedSkill);
 			}
 
@@ -132,6 +132,71 @@ var projects = {
 	}
 };
 
+var education = {
+	"schools": [
+		{
+			"start": "2000",
+			"name": "Università degli Studi di Cagliari",
+			"location": "Cagliari, IT",
+			"degree": "BA",
+			"majors": ["Philosophy", "History", "Literature"],
+			"dates": "2000 - 2004",
+			"url": "http://www.unica.it/"
+		},
+		{
+			"start": "2004",
+			"name": "Università degli Studi di Cagliari",
+			"location": "Cagliari, IT",
+			"degree": "MS",
+			"majors": ["Engineering", "Maths", "Computer Science"],
+			"dates": "2004 - 2006",
+			"url": "http://www.unica.it/"
+		},
+	],
+	"onlineCourses": [
+		{
+			"title": "Front End Nanodegree",
+			"school": "Udacity",
+			"dates": "09/2016 - in progress",
+			"url": "https://www.udacity.com/"
+		}
+	],
+	display: function() {
+		$("#education").append(HTMLschoolStart);
+		for (var i = 0; i < education.schools.length; i++) {
+			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name);
+			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
+			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
+			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
+			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors[0]);
+			$(".education-entry:last").append(formattedSchoolName);
+			$(".education-entry:last").append(formattedSchoolDegree);
+			$(".education-entry:last").append(formattedSchoolDates);
+			$(".education-entry:last").append(formattedSchoolLocation);
+			$(".education-entry:last").append(formattedSchoolMajor);
+		}
+
+		if (education.onlineCourses) {
+			$(".education-entry:last").append(HTMLonlineClasses);
+			for (var j = 0; j < education.onlineCourses.length; j++) {
+				var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[j].title);
+				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[j].school);
+				var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[j].dates);
+				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url);
+				$(".education-entry:last").append(formattedOnlineTitle);
+				$(".education-entry:last").append(formattedOnlineSchool);
+				$(".education-entry:last").append(formattedonlineDates);
+				$(".education-entry:last").append(formattedOnlineURL);
+			}
+		}
+
+/*
+
+*/
+	}
+};
+
 bio.display();
 work.display();
 projects.display();
+education.display();
