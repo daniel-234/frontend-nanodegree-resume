@@ -36,11 +36,6 @@ var bio = {
 		$("#topContacts").append(formattedLocation);
 		$("#header").append(formattedPic);
 		$("#header").append(formattedMessage);
-		$("#footerContacts").append(formattedMobile);
-		$("#footerContacts").append(formattedEmail);
-		$("#footerContacts").append(formattedGitHub);
-		$("#footerContacts").append(formattedTwitter);
-		$("#footerContacts").append(formattedLocation);
 		if (bio.skills) {
 			$("#header").append(HTMLskillsStart);
 			for (var i = 0; i < bio.skills.length; i++) {
@@ -195,6 +190,10 @@ var education = {
 				$(".education-entry:last").append(formattedOnlineURL);
 			}
 		}
+
+/*
+
+*/
 	}
 };
 
