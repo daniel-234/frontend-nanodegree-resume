@@ -1,4 +1,4 @@
-var skills = ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"];
+var skills = ["HTML", "CSS", "Javascript", "jQuery"];
 
 var bio = {
 	"name": "Daniele Erbì",
@@ -11,8 +11,8 @@ var bio = {
 		"location": "London, UK"
 	},
 	"welcomeMessage": "This is my second project for the Udacity Front End Nanodegree " +
-	                  "and to show my skills and the new things I've learned, I adapted " +
-	                  "this online resume. By the way, don't trust everything you read here!",
+	                  "and I adapted this online resume to show my skills and the new " +
+	                  "things I've learned. By the way, don't trust everything you read here!",
 	"skills": skills,
 	"biopic": "images/fry.jpg",
 	// display properties of the 'bio' object
@@ -37,7 +37,7 @@ var bio = {
 		$("#header").append(formattedMessage);
 		if (bio["skills"]) {
 			$("#header").append(HTMLskillsStart);
-			for (let i = 0; i < bio.skills.length; i++) {
+			for (var i = 0; i < bio.skills.length; i++) {
 				var formattedSkill = HTMLskills.replace("%data%", bio["skills"][i]);
 				$("#skills").append(formattedSkill);
 			}
@@ -46,4 +46,51 @@ var bio = {
 	}
 };
 
+var work = {
+	"jobs": [
+		{
+			"start": "2015",
+			"employer": "Ice Cream Inc.",
+			"title": "CEO",
+			"location": "London, UK",
+			"dates": "2015 - 'in progress'",
+			"description": "Ran the best ice cream shops in town."
+		},
+		{
+			"start": "2010",
+			"employer": "Ice Cream Inc.",
+			"title": "Software Engineer",
+			"location": "Berlin, DE",
+			"dates": "2010 - 2015",
+			"description": "Built great software for the best ice cream shops in town."
+		},
+		{
+			"start": "2006",
+			"employer": "Ice Cream Inc.",
+			"title": "Teller",
+			"location": "Milan, IT",
+			"dates": "2006 - 2010",
+			"description": "Worked in the best ice cream shop in town."
+		}
+	],
+	display: function() {
+		for (var i = 0; i < work.jobs.length; i++) {
+			// create a new div for every work experience in the jobs array
+			$("#workExperience").append(HTMLworkStart);
+			var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+			var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title)
+			// concatenate employer and title
+			var formattedWorkEmployerTitle = formattedWorkEmployer + formattedWorkTitle;
+			var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+			var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+			var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+			$(".work-entry:last").append(formattedWorkEmployerTitle);
+			$(".work-entry:last").append(formattedWorkDates);
+			$(".work-entry:last").append(formattedWorkLocation);
+			$(".work-entry:last").append(formattedWorkDescription);
+		}
+	}
+};
+
 bio.display();
+work.display();
