@@ -14,6 +14,50 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header1 {
+  width:25%;
+}
+
+#header2 {
+  width: 75%;
+  text-align: center;
+}
+
+#workExperience {
+  width: 100%;
+}
+
+#education {
+  width: 100%;
+}
+
+#lets-connect {
+  width: 100%;
+  text-align: center;
+}
+
+
+/*
+#main1 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+
 .clear-fix {
   overflow: auto;
 }
@@ -105,8 +149,18 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #fff;
   line-height: 28px;
+  display: block;
+  width: 80%;
+  position: relative;
+  top: 60px;
+  padding-left: 75px;
+}
+
+#topContacts {
+  position: relative;
+  top: 80px;
 }
 
 #skills-h3 {
@@ -182,7 +236,8 @@ a {
 }
 
 /* TODO: Replace with image later */
-#header {
+#header1,
+#header2 {
   background-color: #449c9c;
 }
 
@@ -202,9 +257,13 @@ a {
   padding: 10px;
 }
 
+
+/*
 .center-content {
   padding: 2.5% 5%;
 }
+*/
+
 
 ul {
   list-style-type: none;
@@ -225,15 +284,19 @@ span {
   padding: 5px;
 }
 
+
+/*
 #lets-connect {
   text-align: center;
 }
+*/
+
 
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
   #lets-connect {
-    margin-top: 5%;
+    /*margin-top: 5%;*/
   }
 }
 
@@ -244,9 +307,13 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
+
+  /*
   #lets-connect {
     margin-top: 10%;
   }
+*/
+
   .biopic {
     width: 150px;
   }
@@ -264,10 +331,25 @@ span {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 100px; /*5%;*/
+}
+
+@media only screen and (max-width: 320px) {
+  #map {
+    height: 98%;
+  }
 }
 
 @media only screen and (min-width: 750px) {
+
+  /*
+  #header1,
+  #header2 {
+    width: 50%;
+  }
+*/
+
+
   #skills-h3,
   .biopic {
     display: block;

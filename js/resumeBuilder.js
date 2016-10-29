@@ -26,15 +26,15 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#header").prepend(formattedRole);
-		$("#header").prepend(formattedName);
+		$("#header1").prepend(formattedRole);
+		$("#header1").prepend(formattedName);
 		$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
 		$("#topContacts").append(formattedGitHub);
 		$("#topContacts").append(formattedTwitter);
 		$("#topContacts").append(formattedLocation);
-		$("#header").append(formattedPic);
-		$("#header").append(formattedMessage);
+		$("#header1").prepend(formattedPic);
+		$("#header2").prepend(formattedMessage);
 		$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedGitHub);
@@ -130,8 +130,8 @@ var projects = {
 			$(".project-entry:last").append(formattedProjectDescription);
 			// Iterate through the images array in each project
 			for (var j = 0; j < projects.projects[i].images.length; j++) {
-				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[j]);
-				$(".project-entry:last").append(formattedProjectImage);
+				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[0]);
+				//$(".project-entry:last").append(formattedProjectImage);
 			}
 		}
 	}
