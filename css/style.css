@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #e8d291;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +34,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #4a4a4a;
   line-height: 29px;
   padding: 10px;
 }
@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #4a4a4a;
   line-height: 22px;
 }
 
@@ -64,10 +64,18 @@ h3 {
   padding: 20px 0 5px 0;
 }
 
-.date-text {
+.light-green-date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #baeaa7;
+  line-height: 16px;
+  float: left;
+}
+
+.light-red-date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #e67070;
   line-height: 16px;
   float: left;
 }
@@ -75,7 +83,7 @@ h3 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #e67070;
   line-height: 16px;
   float: right;
 
@@ -88,7 +96,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #027092;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -102,7 +110,7 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #e8d291;
   display: none;
 }
 
@@ -129,9 +137,53 @@ a {
   background-color: #4a4a4a;
 }
 
+/* Custom colors */
+.light-gray-text {
+  color: #dcdcdc;
+}
+
+.dark-gray-text {
+  color: #4a4a4a;;
+}
+
+.light-blue {
+  background-color: #449c9c;
+}
+
+.sand {
+  background-color: #e8d291;
+}
+
+.sand-text {
+  color: #e8d291;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #449c9c;
+  font-weight: bold;
+}
+
+.bright-red-text {
+  color: #c12d2d;
+}
+
+
+.header-on-sand {
+  color: #449c9c;
+}
+
+.header-on-blue {
+  color: #e8d291;
+}
+
+.anchor-text-on-blue {
+  color: #e4c366;
+}
+
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #449c9c;
 }
 
 .flex-box {
