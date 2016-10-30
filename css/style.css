@@ -22,11 +22,14 @@ body {
 
 .container {
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
 }
 
+
+
+
+/* This is repeated content */
 #aside {
   width:25%;
 
@@ -64,6 +67,10 @@ body {
   width: 100%;
   text-align: center;
 }
+
+
+
+
 
 
 /*
@@ -162,7 +169,9 @@ a {
   display: block;
 }
 
-
+#aside {
+  text-align: center;
+}
 
 .welcome-message {
   font-style: italic;
@@ -408,7 +417,101 @@ span {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 499px) {
+  #aside {
+    width:100%;
+
+  /* this border should not be on small screens
+  border-right: 2px solid white;
+  */
+  }
+
+  #header {
+    width: 100%;
+    text-align: center;
+  }
+
+  #workExperience {
+    width: 100%;
+  }
+
+  #skillsDiv {
+    width: 100%;
+  }
+
+  #projects {
+    width: 100%;
+  }
+
+  #education {
+    width: 100%;
+  }
+
+  #hobbiesDiv {
+    width: 100%;
+    background-color: #449c9c;
+  }
+
+  #lets-connect {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 500px)  and (max-width: 899px) {
+  #aside {
+    width:100%;
+
+  /* this border should not be on small screens
+  border-right: 2px solid white;
+  */
+  }
+
+  #header {
+    width: 100%;
+    text-align: center;
+    order: 3;
+  }
+
+  #workExperience {
+    width: 100%;
+    order: 4;
+  }
+
+  #skillsDiv {
+    width: 50%;
+    order: 1;
+  }
+
+  #projects {
+    width: 100%;
+    order: 5;
+  }
+
+  #education {
+    width: 100%;
+    order: 6;
+  }
+
+  #hobbiesDiv {
+    width: 50%;
+    order: 2;
+  }
+
+  #mapDiv {
+    order: 7;
+  }
+
+  #lets-connect {
+    width: 100%;
+    text-align: center;
+    order: 8;
+  }
+
+}
+
+
+@media only screen and (min-width: 900px) {
 
   /*
   #header1,
@@ -417,6 +520,53 @@ span {
   }
 */
 
+  #aside {
+    width:25%;
+    order: 0;
+
+  /* this border should not be on small screens
+  border-right: 2px solid white;
+  */
+  }
+
+  #header {
+    width: 75%;
+    order: 1;
+  }
+
+  #workExperience {
+    width: 70%;
+    order: 2;
+  }
+
+  #skillsDiv {
+    width: 30%;
+    order: 3;
+  }
+
+  #projects {
+    width: 100%;
+    order: 4;
+  }
+
+  #education {
+    width: 70%;
+    order: 5;
+  }
+
+  #hobbiesDiv {
+    width: 30%;
+    order: 6;
+  }
+
+  #mapDiv {
+    order: 7;
+  }
+
+  #lets-connect {
+    width: 100%;
+    order: 8;
+  }
 
   #skills-h3,
   #hobbies-h3,
