@@ -169,11 +169,12 @@ a {
   font-size: 18px;
   color: #fff;
   line-height: 28px;
-  display: block;
   width: 80%;
   position: relative;
   top: 60px;
-  padding-left: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #topContacts {
