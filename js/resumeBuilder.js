@@ -1,5 +1,5 @@
 var skills = ["HTML", "CSS", "Javascript", "jQuery"];
-
+var hobbies = ["reading", "cinema", "sports"];
 var bio = {
 	"name": "Daniele Erbì",
 	"role": "Front End Engineer",
@@ -14,6 +14,7 @@ var bio = {
 	                  "and I adapted this online resume to show my skills and the new " +
 	                  "things I've learned. By the way, don't trust everything you read here!",
 	"skills": skills,
+	"hobbies": hobbies,
 	"biopic": "images/fry.jpg",
 	// Display properties of the 'bio' object
 	display: function() {
@@ -26,25 +27,33 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#header1").prepend(formattedRole);
-		$("#header1").prepend(formattedName);
+		$("#aside").prepend(formattedRole);
+		$("#aside").prepend(formattedName);
 		$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
 		$("#topContacts").append(formattedGitHub);
 		$("#topContacts").append(formattedTwitter);
 		$("#topContacts").append(formattedLocation);
-		$("#header1").prepend(formattedPic);
-		$("#header2").prepend(formattedMessage);
+		$("#aside").prepend(formattedPic);
+		$("#header").prepend(formattedMessage);
 		$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedGitHub);
 		$("#footerContacts").append(formattedTwitter);
 		$("#footerContacts").append(formattedLocation);
 		if (bio.skills) {
-			$("#header").append(HTMLskillsStart);
+			$("#skillsDiv").append(HTMLskillsStart);
 			for (var i = 0; i < bio.skills.length; i++) {
 				var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
 				$("#skills").append(formattedSkill);
+			}
+
+		}
+		if (bio.hobbies) {
+			$("#hobbiesDiv").append(HTMLhobbiesStart);
+			for (var j = 0; j < bio.hobbies.length; j++) {
+				var formattedHobbies = HTMLhobbies.replace("%data%", bio.hobbies[j]);
+				$("#hobbies").append(formattedHobbies);
 			}
 
 		}

@@ -27,21 +27,37 @@ body {
   flex-wrap: wrap;
 }
 
-#header1 {
+#aside {
   width:25%;
+
+  /* this border should not be on small screens
+  border-right: 2px solid white;
+  */
 }
 
-#header2 {
+#header {
   width: 75%;
   text-align: center;
 }
 
 #workExperience {
+  width: 70%;
+}
+
+#skillsDiv {
+  width: 30%;
+}
+
+#projects {
   width: 100%;
 }
 
 #education {
-  width: 100%;
+  width: 70%;
+}
+
+#hobbiesDiv {
+  width: 30%;
 }
 
 #lets-connect {
@@ -168,6 +184,11 @@ a {
   display: none;
 }
 
+#hobbies-h3 {
+  color: #e8d291;
+  display: none;
+}
+
 .orange {
   background-color: #f5ae23;
 }
@@ -236,8 +257,8 @@ a {
 }
 
 /* TODO: Replace with image later */
-#header1,
-#header2 {
+#aside,
+#header {
   background-color: #449c9c;
 }
 
@@ -351,6 +372,7 @@ span {
 
 
   #skills-h3,
+  #hobbies-h3,
   .biopic {
     display: block;
   }
