@@ -281,20 +281,38 @@ a {
   padding: 10px;
 }
 
-.hobbies-text {
-  background-color: #696969;
-  padding: 5%;
-  margin: 5%;
-  width: 30%;
-  display: inline-flex;
-}
-
 .skills-text {
   background-color: #696969;
   padding: 5%;
   margin: 5%;
   width: 30%;
   display: inline-flex;
+  border-radius: 10px;
+}
+
+.skills-text:hover {
+  background-color: #449c9c;
+  border-radius: 0px;
+}
+
+.hobbies-text {
+  background-color: #696969;
+  padding: 5%;
+  margin: 5%;
+  width: 30%;
+  display: inline-flex;
+  border-radius: 10px;
+}
+
+.hobbies-text:hover {
+  background-color: #449c9c;
+  transform: translate(0, -10px);
+}
+
+.hobbies-items {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills-items {
@@ -303,11 +321,6 @@ a {
   margin-right: auto;
 }
 
-.hobbies-items {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /*
 .center-content {
