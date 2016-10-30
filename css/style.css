@@ -162,6 +162,8 @@ a {
   display: block;
 }
 
+
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;
@@ -272,12 +274,39 @@ a {
 }
 
 .flex-column {
-  display: flex;
+  display: inherit;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
 }
 
+.hobbies-text {
+  background-color: #696969;
+  padding: 5%;
+  margin: 5%;
+  width: 30%;
+  display: inline-flex;
+}
+
+.skills-text {
+  background-color: #696969;
+  padding: 5%;
+  margin: 5%;
+  width: 30%;
+  display: inline-flex;
+}
+
+.skills-items {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hobbies-items {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*
 .center-content {
@@ -285,6 +314,10 @@ a {
 }
 */
 
+
+.center-text {
+  text-align: center;
+}
 
 ul {
   list-style-type: none;
