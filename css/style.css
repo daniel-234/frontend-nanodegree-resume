@@ -95,7 +95,7 @@ h1 {
   font-size: 40px;
   color: #e8d291;
   line-height: 48px;
-  display: inline;
+  /*display: inline;*/
 }
 
 h2 {
@@ -331,6 +331,20 @@ a {
 }
 
 
+
+
+/*
+.fa-mobile .text {
+  visibility:hidden;
+  color: #fff;
+}
+
+.fa-mobile:hover .text {
+  visibility:visible;
+}
+*/
+
+
 /*
 .center-content {
   padding: 2.5% 5%;
@@ -378,8 +392,20 @@ span {
 }
 
 @media only screen and (max-width:900px) {
+  h1 {
+    padding-top: 10px;
+  }
+
   .biopic {
     width: 175px;
+  }
+
+  .welcome-message {
+    top: 0;
+  }
+
+  #topContacts {
+    top: 0;
   }
 }
 
@@ -394,8 +420,11 @@ span {
   .biopic {
     width: 150px;
   }
-  .welcome-message {
-    display: none;
+
+
+
+  #topContacts {
+    top: 0;
   }
 }
 
@@ -415,6 +444,8 @@ span {
   #map {
     height: 98%;
   }
+
+
 }
 
 @media only screen and (max-width: 499px) {
@@ -456,9 +487,25 @@ span {
     width: 100%;
   }
 
+  .welcome-message {
+    display: none;
+  }
+
+   #topContacts {
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (min-width: 500px)  and (max-width: 899px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .phone-text {
+    font-size: 1.5em;
+  }
+
   #aside {
     width:100%;
 
@@ -507,6 +554,8 @@ span {
     text-align: center;
     order: 8;
   }
+
+
 
 }
 

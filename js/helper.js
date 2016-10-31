@@ -15,13 +15,13 @@ replace the %data% placeholder text you see in them.
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<h5 class="dark-gray-text">%data%</h5><hr>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="sand-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="sand-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="sand-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="sand-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="sand-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="sand-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="sand-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<a class="flex-item"><span class="sand-text">%contact%</span><span class="white-text">%data%</span></a>';
+var HTMLemail = '<a class="flex-item" href="mailto:%data%"><span class="white-text fa fa-envelope-o fa-lg" aria-hidden="true"></span></a>';
+var HTMLtwitter = '<a class="flex-item" href="https://twitter.com/%data%"><span class="white-text fa fa-twitter fa-lg" aria-hidden="true"></span></a>';
+var HTMLgithub = '<a class="flex-item" href="https://github.com/%data%"><span class="white-text fa fa-github fa-lg" aria-hidden="true"></span></a>';
+var HTMLblog = '<a class="flex-item"><span class="sand-text">blog</span><span class="white-text">%data%</span></a>';
+var HTMLmobile = '<span class="white-text phone-text fa fa-phone fa-lg" aria-hidden="true"> %data%</span>';
+var HTMLlocation = '<a class="flex-item"><span class="white-text fa fa-map-marker fa" aria-hidden="true"> %data%</span></a>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';

@@ -7,7 +7,7 @@ var bio = {
 		"mobile": "012-345-6789",
 		"email": "an-email@email.com",
 		"github": "daniel-234",
-		"twitter": "https://twitter.com/",
+		"twitter": "#",
 		"location": "London, UK"
 	},
 	"welcomeMessage": "This is my second project for the Udacity Front End Nanodegree " +
@@ -27,20 +27,21 @@ var bio = {
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-		$("#aside").prepend(formattedRole);
+		//$("#footerContacts").append(formattedLocation);
+		$("#aside").prepend(formattedLocation);
+		$("#aside").prepend(formattedMobile);
 		$("#aside").prepend(formattedName);
-		$("#topContacts").append(formattedMobile);
+		//$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
 		$("#topContacts").append(formattedGitHub);
 		$("#topContacts").append(formattedTwitter);
-		$("#topContacts").append(formattedLocation);
+		//$("#topContacts").append(formattedLocation);
 		$("#aside").prepend(formattedPic);
 		$("#header").prepend(formattedMessage);
-		$("#footerContacts").append(formattedMobile);
+		//$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedGitHub);
 		$("#footerContacts").append(formattedTwitter);
-		$("#footerContacts").append(formattedLocation);
 		if (bio.skills) {
 			$("#skillsDiv").append(HTMLskillsStart);
 			for (var i = 0; i < bio.skills.length; i++) {
