@@ -112,36 +112,52 @@ var projects = {
 		{
 			"start": "2016",
 			"title": "Online resume",
-			"dates": "09/2016 - 10/2016",
+			"dates": "2016",
 			"description": "This is the second project in the Udacity Front End Nanodegree. " +
 			                "After learning Javascript and jQuery, I built an online resume to " +
 			                "showcase my new wonderful skills.",
-			"images": ["images/online-resume.svg", "images/arcade-game-clone.svg"]
+			"images": ["images/online-resume.svg"]
 		},
 		{
 			"start": "2016",
 			"title": "Arcade game clone",
-			"dates": "10/2016 - 11/2016",
+			"dates": "2016",
 			"description": "This is the third project in the Udacity Front End Nanodegree. " +
 			                "After learning Object Oriented Javascript and HTML5 canvas, I " +
 			                "cloned an arcade game to showcase my new wonderful skills.",
-			"images": ["images/arcade-game-clone.svg", "images/online-resume.svg"]
+			"images": ["images/arcade-game-clone.svg"]
 		}
 	],
 	display: function() {
 		// Display projects in div with id="projects"
 		$("#projects").append(HTMLprojectStart);
-		for (var i = 0; i < projects.projects.length; i++) {
+		//var formattedFirstProjectTitle = HTMLfirstProjectTitle.replace("%data%", projects.projects[0].title);
+		var projectPanel = $("<div class='project-panel active'></div>");
+		var formattedFirstProjectTitle = HTMLfirstProjectTitle.replace("%data%", projects.projects[0].title);
+		var formattedFirstProjectDates = HTMLfirstProjectDates.replace("%data%", projects.projects[0].dates);
+		var formattedFirstProjectDescription = HTMLfirstProjectDescription.replace("%data%", projects.projects[0].description);
+		$(".tabs:last").append(formattedFirstProjectTitle);
+		$(".panels:last").append(projectPanel);
+		$(".project-panel:last").append(formattedFirstProjectDates);
+		$(".project-panel:last").append(formattedFirstProjectDescription);
+		// Iterate through the images array in each project
+		for (var j = 0; j < projects.projects[0].images.length; j++) {
+			var formattedFirstProjectImage = HTMLfirstProjectImage.replace("%data%", projects.projects[0].images[0]);
+			$(".project-panel:last").append(formattedFirstProjectImage);
+		}
+		for (var i = 1; i < projects.projects.length; i++) {
+			var projectPanel = $("<div class='project-panel'></div>");
 			var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
 			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
 			var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
-			$(".project-entry:last").append(formattedProjectTitle);
-			$(".project-entry:last").append(formattedProjectDates);
-			$(".project-entry:last").append(formattedProjectDescription);
+			$(".tabs:last").append(formattedProjectTitle);
+			$(".panels:last").append(projectPanel);
+			$(".project-panel:last").append(formattedProjectDates);
+			$(".project-panel:last").append(formattedProjectDescription);
 			// Iterate through the images array in each project
-			for (var j = 0; j < projects.projects[i].images.length; j++) {
+			for (var k = 0; k < projects.projects[i].images.length; k++) {
 				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[0]);
-				//$(".project-entry:last").append(formattedProjectImage);
+				$(".project-panel:last").append(formattedProjectImage);
 			}
 		}
 	}

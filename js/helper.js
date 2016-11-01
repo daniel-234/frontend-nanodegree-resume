@@ -39,11 +39,17 @@ var HTMLworkDates = '<div class="light-red-date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="dark-gray-text"><br>%data%</p>';
 
+/* The two variables used to point to apparently the same member are needed to keep each item from the first
+   JSON object take the class active and be displayed as the page loads */
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a class="sand-text" href="#">%data%</a>';
-var HTMLprojectDates = '<div class="light-green-date-text">%data%</div>';
-var HTMLprojectDescription = '<p class="light-gray-text"><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLfirstProjectTitle = '<a class="sand-text tab active" href="#selected-panel">%data%</a>';
+var HTMLprojectTitle = '<a class="sand-text tab" href="#selected-panel">%data%</a>';
+var HTMLfirstProjectDates = '<div class="light-green-date-text panel active">%data%</div>';
+var HTMLprojectDates = '<div class="light-green-date-text panel">%data%</div>';
+var HTMLfirstProjectDescription = '<p class="light-gray-text panel active">%data%</p>';
+var HTMLprojectDescription = '<p class="light-gray-text panel">%data%</p>';
+var HTMLfirstProjectImage = '<img class="img-panel" src="%data%">';
+var HTMLprojectImage = '<img class="img-panel" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -71,7 +77,50 @@ $(document).ready(function() {
     var iName = inName($name.text()) || function(){};
     $name.html(iName);
   });
+
+/*
+  $(".projects .project-links a").click(function(e) {
+    var currentAttrValue = $(this).attr("href");
+
+    // Show / hide project tabs
+    $(".projects" + currentAttrValue).show().siblings.hide();
+
+    // Change / remove current project tab to active
+    $(this).parent("li").addClass("active").siblings().removeClass("active");
+
+    e.preventDefault();
+  });
+
+  */
+
+
+
+  $('.tab').on('click', function (e) {
+    e.preventDefault();
+    $('.tab, .project-panel').removeClass('active');
+    $(this).addClass('active');
+    // Take the index of the selected tab
+    var index = $('.tab').index(this);
+    // Use the tab index to select the panel at the corresponding index
+    var children = $(this).parent().siblings(".panels").children()[index];
+    // Add class active to the selected panels child
+    $(children).addClass("active");
+    $(this).focus();
+  });
 });
+
+/*
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+*/
+  //function openCity(evt, cityName) {
+
+//}
+
 
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.

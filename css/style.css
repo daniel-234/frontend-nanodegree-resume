@@ -133,10 +133,11 @@ h3 {
 
 .light-green-date-text {
   font-style: italic;
-  font-size: 14px;
+  font-size: 2em;
   color: #baeaa7;
   line-height: 16px;
   float: left;
+  width: 15%;
 }
 
 .light-red-date-text {
@@ -330,7 +331,21 @@ a {
   margin-right: auto;
 }
 
+p.panel {
+  width: 30%;
+}
 
+.img-panel {
+  width: 45%;
+}
+
+#projects .project-panel {
+    display: none;
+}
+#projects .project-panel.active {
+    display: flex;
+  align-items: center;
+}
 
 
 /*
@@ -495,6 +510,25 @@ span {
     justify-content: center;
   }
 
+  #projects .project-panel.active {
+    display: inline-block;
+}
+
+p.panel {
+  width: 100%;
+}
+
+.img-panel {
+  width: 100%;
+}
+
+.light-green-date-text {
+  text-align: center;
+  padding: 5% 0;
+  float: none;
+  width: 100%;
+}
+
 }
 
 @media only screen and (min-width: 500px)  and (max-width: 899px) {
@@ -623,3 +657,209 @@ span {
     display: block;
   }
 }
+
+.js-tabs .tab {
+    display: inline-block;
+    padding: .5em;
+    vertical-align: top;
+    background-color: #4a4a4a;
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.js-tabs .tab:focus {
+    box-shadow: 0 0 1px 1px rgba(0,127,255,.5);
+}
+.js-tabs .tab:hover {
+    background-color: #e8d291;
+}
+.js-tabs .tab.active {
+    background-color: #e8d291;
+    /*border-bottom: .3em solid #fff;*/
+    cursor: default;
+    color: #449c9c;
+}
+
+.js-tabs .panels {
+    background-color: #449c9c;
+    padding: .5em;
+}
+
+
+
+/*
+.project-panel1 {
+  display: flex;
+  align-items: center;
+}
+*/
+
+
+
+/*
+.js-tabs .panel {
+    display: none;
+}
+.js-tabs .panel.active {
+    display: block;
+}
+
+/* Android 2.3 :checked fix
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+    to {
+        opactity: 1
+    }
+}
+
+body {
+    animation: fake 1s infinite;
+}
+
+.radio-tabs .state {
+    position: absolute;
+    left: -10000px;
+}
+#starks:focus ~ .tabs #starks-tab,
+#lannisters:focus ~ .tabs #lannisters-tab,
+#targaryens:focus ~ .tabs #targaryens-tab {
+    /*box-shadow: 0 0 3px 3px rgba(0,127,255,.5);*/
+    /*background-color: blue;
+}
+
+.radio-tabs .tab {
+    display: inline-block;
+    padding: .5em;
+    vertical-align: top;
+    background-color: #696969;
+    cursor: hand;
+    cursor: pointer;
+}
+.radio-tabs .tab:hover {
+    background-color: #e8d291;
+}
+#starks[aria-selected] ~ .tabs #starks-tab,
+#lannisters[aria-selected] ~ .tabs #lannisters-tab,
+#targaryens[aria-selected] ~ .tabs #targaryens-tab,
+#starks:checked ~ .tabs #starks-tab,
+#lannisters:checked ~ .tabs #lannisters-tab,
+#targaryens:checked ~ .tabs #targaryens-tab {
+    background-color: #e8d291;
+    /*border-bottom: .3em solid #fff;
+    cursor: default;
+}
+
+.radio-tabs .panels {
+    background-color: #449c9c;
+    padding: .5em;
+}
+.radio-tabs .panel {
+    display: none;
+}
+#starks[aria-selected] ~ .panels #starks-panel,
+#lannisters[aria-selected] ~ .panels #lannisters-panel,
+#targaryens[aria-selected] ~ .panels #targaryens-panel,
+#starks:checked ~ .panels #starks-panel,
+#lannisters:checked ~ .panels #lannisters-panel,
+#targaryens:checked ~ .panels #targaryens-panel {
+    display: block;
+}
+
+/*
+#projects {
+  width: 100%;
+  display: inline-block;
+}
+
+.project-links:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.project-links li {
+  margin: 0px 5px;
+  float: left;
+  list-style: none;
+}
+
+.project-links a {
+  padding: 9px 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0px 0px;
+  background: #7fb5da;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+  transition: all linear 0.15s;
+}
+
+.project-links a:hover {
+  background: #a7cce5;
+  text-decoration: none;
+}
+
+li.active a, li.active a:hover {
+  background: #fff;
+  color: #4c4c4c;
+}
+
+.project-content {
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.project {
+  display: none;
+}
+
+.project.active {
+  display: block;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side
+ul.tab li {float: left;}
+
+/* Style the links inside the list items
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+*/

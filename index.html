@@ -47,28 +47,71 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     display by looking at the id or at what's written between the <h2> tags.
     -->
     <div id="aside" class="center-content clear-fix"></div>
+
     <div id="header" class="center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
     </div>
+
     <!-- <div style="clear: both;"></div> -->
     <div id="skillsDiv" class="sand">
       <h2 class="blue-text center-text">Skills</h2>
     </div>
+
     <div id="hobbiesDiv" class="sand">
       <h2 class="blue-text center-text">Hobbies</h2>
     </div>
+
     <div id="workExperience" class="sand">
       <h2 class="blue-text">Work Experience</h2>
     </div>
-    <div id="projects" class="light-blue">
+
+    <div id="projects" class="js-tabs light-blue">
       <h2 class="sand-text">Projects</h2>
+
+      <!-- .tabs' children are .tab anchor tags held by variables named HTMLprojectTitle -->
+      <div class="tabs">
+        <!-- <a class="sand-text tab active" href="#starks-panel" id="starks-tab">Portfolio Website</a>
+         <a href="#starks-panel" id="starks-tab" class="tab active">Starks</a>
+        <a href="#lannisters-panel" id="lannisters-tab" class="tab">Lannisters</a>
+        <a href="#targaryens-panel" id="targaryens-tab" class="tab">Targaryens</a> -->
+      </div>
+
+      <!-- .panels' children are .project-panel divs held by variable projectPanel, to which date,
+           description and image are appended -->
+      <div class="panels">
+        <!-- <p class="light-gray-text panel active">My Portfolio</p>
+
+        <ul id="starks-panel" class="panel active">
+            <li>Eddard</li>
+            <li>Catelyn</li>
+            <li>Robb</li>
+            <li>Sansa</li>
+            <li>Brandon</li>
+            <li>Arya</li>
+            <li>Rickon</li>
+        </ul>
+        <ul id="lannisters-panel" class="panel">
+            <li>Tywin</li>
+            <li>Cersei</li>
+            <li>Jamie</li>
+            <li>Tyrion</li>
+        </ul>
+        <ul id="targaryens-panel" class="panel">
+            <li>Viserys</li>
+            <li>Daenerys</li>
+        </ul> -->
+      </div>
     </div>
+
+
     <div id="education" class="sand">
       <h2 class="blue-text">Education</h2>
     </div>
+
     <div id="mapDiv" class="light-blue">
       <h2 class="sand-text">Where I've Lived and Worked</h2>
     </div>
+
     <div id="lets-connect" class="light-blue">
       <h2 class="sand center-text blue-text">Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
