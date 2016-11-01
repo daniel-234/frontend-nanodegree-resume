@@ -25,6 +25,8 @@ var bio = {
 		var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
 		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+		// wrap the image element in a square div element to render it as circular
+		var imageDiv = $("<div class='picture-elem'></div>");
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 		//$("#footerContacts").append(formattedLocation);
@@ -36,7 +38,8 @@ var bio = {
 		$("#topContacts").append(formattedGitHub);
 		$("#topContacts").append(formattedTwitter);
 		//$("#topContacts").append(formattedLocation);
-		$("#aside").prepend(formattedPic);
+		$("#aside").prepend(imageDiv);
+		$(".picture-elem").prepend(formattedPic);
 		$("#header").prepend(formattedMessage);
 		//$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);

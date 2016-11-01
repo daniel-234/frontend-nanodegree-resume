@@ -390,6 +390,23 @@ span {
   padding: 5px;
 }
 
+/* Add styles to the wrapper div so that it crops the image */
+.picture-elem {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.picture-elem img {
+  width: auto;
+  height: 100%;
+  margin-left: -35px;
+  margin-top: -10px;
+}
 
 /*
 #lets-connect {
