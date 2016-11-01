@@ -284,6 +284,14 @@ a {
   padding: 10px;
 }
 
+.contacts-at-top {
+  padding: 0 20%;
+}
+
+.contacts-at-bottom {
+  padding: 0 30%;
+}
+
 .flex-column {
   display: inherit;
   flex-direction: column;
@@ -438,6 +446,14 @@ span {
 
   #topContacts {
     top: 0;
+  }
+
+  .contacts-at-top {
+    padding: 0 30%;
+  }
+
+  .picture-elem {
+    display: none;
   }
 }
 
@@ -673,6 +689,8 @@ p.panel {
   .biopic {
     display: block;
   }
+
+
 }
 
 .js-tabs .tab {
