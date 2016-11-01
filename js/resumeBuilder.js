@@ -73,19 +73,19 @@ var work = {
 	"jobs": [
 		{
 			"start": "2015",
-			"employer": "Ice Cream Inc.",
-			"title": "CEO",
+			"employer": "NewBank Inc.",
+			"title": "Lead Software Engineer",
 			"location": "London, UK",
 			"dates": "2015 - 'in progress'",
-			"description": "Ran the best ice cream shops in town."
+			"description": "Built the infrastructure for a new Fintech company."
 		},
 		{
 			"start": "2010",
-			"employer": "Ice Cream Inc.",
-			"title": "CTO",
+			"employer": "MyCar Inc.",
+			"title": "Senior Software Engineer",
 			"location": "Berlin, DE",
 			"dates": "2010 - 2015",
-			"description": "Built great software for the best ice cream shops in town."
+			"description": "Built a new connected car feature."
 		},
 		{
 			"start": "2006",
@@ -93,7 +93,7 @@ var work = {
 			"title": "Software Engineer",
 			"location": "Milan, IT",
 			"dates": "2006 - 2010",
-			"description": "Worked in the best ice cream shop in town."
+			"description": "Built software for the best ice cream shops in town."
 		}
 	],
 	display: function() {
