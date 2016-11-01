@@ -119,21 +119,29 @@ var projects = {
 	"projects": [
 		{
 			"start": "2016",
-			"title": "Online resume",
+			"title": "Portfolio Website",
 			"dates": "2016",
-			"description": "This is the second project in the Udacity Front End Nanodegree. " +
-			                "After learning Javascript and jQuery, I built an online resume to " +
-			                "showcase my new wonderful skills.",
-			"images": ["images/online-resume.svg"]
+			"description": "After learning HTML, CSS and some basic Javascript, as a first project " +
+							"for the Udacity Front End Nanodegree we were asked to build a Portfolio Website.",
+			"images": ["images/portfolio-website.png"]
 		},
 		{
 			"start": "2016",
-			"title": "Arcade game clone",
+			"title": "Arcade Game Clone",
 			"dates": "2016",
 			"description": "This is the third project in the Udacity Front End Nanodegree. " +
 			                "After learning Object Oriented Javascript and HTML5 canvas, I " +
 			                "cloned an arcade game to showcase my new wonderful skills.",
 			"images": ["images/arcade-game-clone.svg"]
+		},
+		{
+			"start": "2016",
+			"title": "Neighborhood Map",
+			"dates": "2016",
+			"description": "This is the fifth project in the Udacity Front End Nanodegree. " +
+			                "We were asked to build a map application using all the techniques " +
+			                "and new skills that we learned in this nanodegree. ",
+			"images": ["images/neighborhood-map.svg"]
 		}
 	],
 	display: function() {

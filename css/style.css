@@ -363,7 +363,9 @@ p.panel {
   align-items: center;
 }
 
-
+.tabs-display {
+  display: flex;
+}
 /*
 .fa-mobile .text {
   visibility:hidden;
@@ -496,81 +498,9 @@ span {
   padding-bottom: 100px; /*5%;*/
 }
 
-@media only screen and (max-width: 320px) {
-  #map {
-    height: 98%;
-  }
 
 
-}
 
-@media only screen and (max-width: 499px) {
-  #aside {
-    width:100%;
-
-  /* this border should not be on small screens
-  border-right: 2px solid white;
-  */
-  }
-
-  #header {
-    width: 100%;
-    text-align: center;
-  }
-
-  #workExperience {
-    width: 100%;
-  }
-
-  #skillsDiv {
-    width: 100%;
-  }
-
-  #projects {
-    width: 100%;
-  }
-
-  #education {
-    width: 100%;
-  }
-
-  #hobbiesDiv {
-    width: 100%;
-    background-color: #449c9c;
-  }
-
-  #lets-connect {
-    width: 100%;
-  }
-
-  .welcome-message {
-    display: none;
-  }
-
-   #topContacts {
-    justify-content: center;
-  }
-
-  #projects .project-panel.active {
-    display: inline-block;
-}
-
-p.panel {
-  width: 100%;
-}
-
-.img-panel {
-  width: 100%;
-}
-
-.light-green-date-text {
-  text-align: center;
-  padding: 5% 0;
-  float: none;
-  width: 100%;
-}
-
-}
 
 @media only screen and (min-width: 500px)  and (max-width: 899px) {
   h1 {
@@ -698,6 +628,91 @@ p.panel {
     display: block;
   }
 
+
+}
+
+
+
+@media only screen and (max-width: 499px) {
+  #aside {
+    width:100%;
+
+  /* this border should not be on small screens
+  border-right: 2px solid white;
+  */
+  }
+
+  #header {
+    width: 100%;
+    text-align: center;
+  }
+
+  #workExperience {
+    width: 100%;
+  }
+
+  #skillsDiv {
+    width: 100%;
+  }
+
+  #projects {
+    width: 100%;
+  }
+
+  #education {
+    width: 100%;
+  }
+
+  #hobbiesDiv {
+    width: 100%;
+    background-color: #449c9c;
+  }
+
+  #lets-connect {
+    width: 100%;
+  }
+
+  .welcome-message {
+    display: none;
+  }
+
+   #topContacts {
+    justify-content: center;
+  }
+
+  #projects .project-panel.active {
+    display: inline-block;
+}
+
+p.panel {
+  width: 100%;
+}
+
+.img-panel {
+  width: 100%;
+}
+
+.light-green-date-text {
+  text-align: center;
+  padding: 5% 0;
+  float: none;
+  width: 100%;
+}
+
+.tab-text {
+    font-size: 1.1em;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  #map {
+    height: 98%;
+  }
+
+  .tab-text {
+    font-size: 0.7em;
+  }
 
 }
 

@@ -43,8 +43,8 @@ var HTMLworkDescription = '<p class="dark-gray-text"><br>%data%</p>';
 /* The two variables used to point to apparently the same member are needed to keep each item from the first
    JSON object take the class active and be displayed as the page loads */
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLfirstProjectTitle = '<a class="sand-text tab active" href="#selected-panel">%data%</a>';
-var HTMLprojectTitle = '<a class="sand-text tab" href="#selected-panel">%data%</a>';
+var HTMLfirstProjectTitle = '<a class="sand-text tab tab-text active" href="#selected-panel">%data%</a>';
+var HTMLprojectTitle = '<a class="sand-text tab tab-text" href="#selected-panel">%data%</a>';
 var HTMLfirstProjectDates = '<div class="light-green-date-text panel active">%data%</div>';
 var HTMLprojectDates = '<div class="light-green-date-text panel">%data%</div>';
 var HTMLfirstProjectDescription = '<p class="light-gray-text panel active">%data%</p>';
