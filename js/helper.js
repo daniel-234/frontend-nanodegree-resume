@@ -13,12 +13,13 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<h5 class="dark-gray-text">%data%</h5><hr>';
+var HTMLheaderRole = '<h3 class="dark-gray-text role-header">%data%</h3>';
 
 var HTMLcontactGeneric = '<a class="flex-item"><span class="sand-text">%contact%</span><span class="white-text">%data%</span></a>';
 var HTMLemail = '<a class="flex-item" href="mailto:%data%"><span class="white-text fa fa-envelope-o fa-lg" aria-hidden="true"></span></a>';
-var HTMLtwitter = '<a class="flex-item" href="https://twitter.com/%data%"><span class="white-text fa fa-twitter fa-lg" aria-hidden="true"></span></a>';
-var HTMLgithub = '<a class="flex-item" href="https://github.com/%data%"><span class="white-text fa fa-github fa-lg" aria-hidden="true"></span></a>';
+var HTMLlinkedin = '<a class="flex-item" href="https://uk.linkedin.com/in/%data%" target="_blank"><span class="white-text fa fa-linkedin-square fa-lg" aria-hidden="true"></span></a>';
+var HTMLtwitter = '<a class="flex-item" href="https://twitter.com/%data%" target="_blank"><span class="white-text fa fa-twitter fa-lg" aria-hidden="true"></span></a>';
+var HTMLgithub = '<a class="flex-item" href="https://github.com/%data%" target="_blank"><span class="white-text fa fa-github fa-lg" aria-hidden="true"></span></a>';
 var HTMLblog = '<a class="flex-item"><span class="sand-text">blog</span><span class="white-text">%data%</span></a>';
 var HTMLmobile = '<span class="white-text phone-text fa fa-phone fa-lg" aria-hidden="true"> %data%</span>';
 var HTMLlocation = '<a class="flex-item"><span class="white-text fa fa-map-marker fa" aria-hidden="true"> %data%</span></a>';

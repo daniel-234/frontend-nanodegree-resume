@@ -6,6 +6,7 @@ var bio = {
 	"contacts": {
 		"mobile": "012-345-6789",
 		"email": "an-email@email.com",
+		"linkedin": "daniele-erb%C3%AC-304a53120",
 		"github": "daniel-234",
 		"twitter": "#",
 		"location": "London, UK"
@@ -22,6 +23,7 @@ var bio = {
 		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 		var formattedMobile	= HTMLmobile.replace("%data%", bio.contacts.mobile);
 		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+		var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
 		var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
 		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
@@ -32,9 +34,11 @@ var bio = {
 		//$("#footerContacts").append(formattedLocation);
 		$("#aside").prepend(formattedLocation);
 		$("#aside").prepend(formattedMobile);
+		$("#aside").prepend(formattedRole);
 		$("#aside").prepend(formattedName);
 		//$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedEmail);
+		$("#topContacts").append(formattedLinkedin);
 		$("#topContacts").append(formattedGitHub);
 		$("#topContacts").append(formattedTwitter);
 		//$("#topContacts").append(formattedLocation);
@@ -43,6 +47,7 @@ var bio = {
 		$("#header").prepend(formattedMessage);
 		//$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedEmail);
+		$("#footerContacts").append(formattedLinkedin);
 		$("#footerContacts").append(formattedGitHub);
 		$("#footerContacts").append(formattedTwitter);
 		if (bio.skills) {
