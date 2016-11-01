@@ -108,5 +108,6 @@ The resume has four distinct sections: work, education, projects and a header wi
 
 ## Acknowledgments
 
-* Among all the developers who write useful answers on the web to help others, I wanted to thank author Art Lawry @alistapart for its code and wonderful
+* I wanted to thank author Art Lawry @alistapart for its code and wonderful
   explanation on how to use tabs and panels. I took his code from the blog and adapted it for my usage. - [A list apart - Radio controlled Web Design](http://alistapart.com/article/radio-controlled-web-design)
+* I took the code to render a circular image from an article written by Jacob Gube on Six Revisions. [Six revisions - Circular Images with CSS](http://sixrevisions.com/css/circular-images-css/)
