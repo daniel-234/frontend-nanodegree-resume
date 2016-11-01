@@ -352,11 +352,13 @@ p.panel {
 }
 
 .img-panel {
-  width: 45%;
+  width: 50%;
 }
 
 #projects .project-panel {
     display: none;
+    border: 0.4px solid white;
+    padding: 2%;
 }
 #projects .project-panel.active {
     display: flex;
@@ -690,6 +692,7 @@ p.panel {
 
 .img-panel {
   width: 100%;
+  padding: 2% 0;
 }
 
 .light-green-date-text {
@@ -700,7 +703,11 @@ p.panel {
 }
 
 .tab-text {
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+
+  .hobbies-header {
+    color: #e8d291;
   }
 
 }
@@ -711,7 +718,7 @@ p.panel {
   }
 
   .tab-text {
-    font-size: 0.7em;
+    font-size: 0.692em;
   }
 
 }
@@ -725,6 +732,7 @@ p.panel {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+    border: 0.5px solid white;
 }
 .js-tabs .tab:focus {
     box-shadow: 0 0 1px 1px rgba(0,127,255,.5);
