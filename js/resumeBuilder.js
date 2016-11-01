@@ -13,7 +13,7 @@ var bio = {
 	},
 	"welcomeMessage": "This is my second project for the Udacity Front End Nanodegree " +
 	                  "and I adapted this online resume to show my skills and the new " +
-	                  "things I've learned. By the way, don't trust everything you read here!",
+	                  "things I've learned. By the way, I added some fake personal informations!",
 	"skills": skills,
 	"hobbies": hobbies,
 	"biopic": "images/fry.jpg",
@@ -82,7 +82,7 @@ var work = {
 		{
 			"start": "2010",
 			"employer": "Ice Cream Inc.",
-			"title": "Software Engineer",
+			"title": "CTO",
 			"location": "Berlin, DE",
 			"dates": "2010 - 2015",
 			"description": "Built great software for the best ice cream shops in town."
@@ -90,7 +90,7 @@ var work = {
 		{
 			"start": "2006",
 			"employer": "Ice Cream Inc.",
-			"title": "Teller",
+			"title": "Software Engineer",
 			"location": "Milan, IT",
 			"dates": "2006 - 2010",
 			"description": "Worked in the best ice cream shop in town."
@@ -209,7 +209,7 @@ var education = {
 			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
 			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors[0]);
 			$(".education-entry:last").append(formattedSchoolName);
-			$(".education-entry:last").append(formattedSchoolDegree);
+			//$(".education-entry:last").append(formattedSchoolDegree);
 			$(".education-entry:last").append(formattedSchoolDates);
 			$(".education-entry:last").append(formattedSchoolLocation);
 			$(".education-entry:last").append(formattedSchoolMajor);
@@ -223,7 +223,7 @@ var education = {
 				var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[j].dates);
 				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url);
 				$(".education-entry:last").append(formattedOnlineTitle);
-				$(".education-entry:last").append(formattedOnlineSchool);
+				//$(".education-entry:last").append(formattedOnlineSchool);
 				$(".education-entry:last").append(formattedonlineDates);
 				$(".education-entry:last").append(formattedOnlineURL);
 			}
