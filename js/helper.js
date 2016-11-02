@@ -34,8 +34,8 @@ var HTMLhobbiesStart = '<ul id="hobbies" class="flex-column"></ul>';
 var HTMLhobbies = '<li class="flex-item hobbies-text"><span class="white-text hobbies-items">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a class="blue-text" href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkEmployer = '<p class="blue-text">%data%';
+var HTMLworkTitle = ' - %data%</p>';
 var HTMLworkDates = '<div class="light-red-date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="dark-gray-text"><br>%data%</p>';
@@ -53,16 +53,16 @@ var HTMLfirstProjectImage = '<img class="img-panel" src="%data%">';
 var HTMLprojectImage = '<img class="img-panel" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<a href="%url%" target="_blank" class="blue-text education-link">%data%</a>';
+var HTMLschoolDegree = '<p><br>%data%</p>';
 var HTMLschoolDates = '<div class="light-red-date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em class="bright-red-text"><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineSchool = '<a href="%url%" target="_blank" class="blue-text education-link">%data%</a>';
 var HTMLonlineDates = '<div class="light-red-date-text">%data%</div>';
+var HTMLonlineTitle = '<p class="bright-red-text online-title"><br>%data%</p>';
 var HTMLonlineURL = '<br><a href="#" target="_blank" class="url-anchor">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';

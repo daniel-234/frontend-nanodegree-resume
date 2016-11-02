@@ -212,7 +212,7 @@ var education = {
 	display: function() {
 		$("#education").append(HTMLschoolStart);
 		for (var i = 0; i < education.schools.length; i++) {
-			var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name);
+			var formattedSchoolName = HTMLschoolName.replace("%url%", education.schools[i].url).replace("%data%", education.schools[i].name);
 			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
 			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
 			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
@@ -227,14 +227,14 @@ var education = {
 		if (education.onlineCourses) {
 			$(".education-entry:last").append(HTMLonlineClasses);
 			for (var j = 0; j < education.onlineCourses.length; j++) {
-				var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[j].title);
-				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[j].school);
+				var formattedOnlineSchool = HTMLonlineSchool.replace("%url%", education.onlineCourses[j].url).replace("%data%", education.onlineCourses[j].school);
 				var formattedonlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[j].dates);
-				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url);
-				$(".education-entry:last").append(formattedOnlineTitle);
-				//$(".education-entry:last").append(formattedOnlineSchool);
+				var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[j].title);
+				//var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url);
+				$(".education-entry:last").append(formattedOnlineSchool);
 				$(".education-entry:last").append(formattedonlineDates);
-				$(".education-entry:last").append(formattedOnlineURL);
+				$(".education-entry:last").append(formattedOnlineTitle);
+				//$(".education-entry:last").append(formattedOnlineURL);
 			}
 		}
 

@@ -195,6 +195,12 @@ a {
   margin: 5px 0 15px 0;
 }
 
+.online-title {
+  margin: 0 0 15px 0;
+}
+
+
+
 #topContacts {
   position: relative;
   top: 80px;
@@ -631,6 +637,18 @@ span {
   }
 
 
+}
+
+@media only screen and (min-width: 360px) and (max-width: 549px) {
+  .education-link {
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .education-link {
+    margin-right: 50%;
+  }
 }
 
 
