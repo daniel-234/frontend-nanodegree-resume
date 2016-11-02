@@ -636,7 +636,7 @@ span {
     display: block;
   }
 
-
+/* Prevents the school name links to take up the entire row and overlap other elements */
 }
 
 @media only screen and (min-width: 360px) and (max-width: 549px) {
@@ -727,6 +727,11 @@ p.panel {
   .hobbies-header {
     color: #e8d291;
   }
+
+  .hobbies-text:hover {
+  background-color: #e8d291;
+  transform: translate(0, -10px);
+}
 
 }
 
