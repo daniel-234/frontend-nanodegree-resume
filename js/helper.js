@@ -49,8 +49,8 @@ var HTMLfirstProjectDates = '<div class="light-green-date-text panel active">%da
 var HTMLprojectDates = '<div class="light-green-date-text panel">%data%</div>';
 var HTMLfirstProjectDescription = '<p class="light-gray-text panel active">%data%</p>';
 var HTMLprojectDescription = '<p class="light-gray-text panel">%data%</p>';
-var HTMLfirstProjectImage = '<img class="img-panel" src="%data%">';
-var HTMLprojectImage = '<img class="img-panel" src="%data%">';
+var HTMLfirstProjectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank" class="a-panel"><img class="img-panel" src="%data%"></a>';
+var HTMLprojectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank"class="a-panel"><img class="img-panel" src="%data%"></a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="%url%" target="_blank" class="blue-text education-link">%data%</a>';

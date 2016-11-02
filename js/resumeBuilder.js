@@ -120,6 +120,7 @@ var projects = {
 		{
 			"start": "2016",
 			"title": "Portfolio Website",
+			"url": "portfolio-website/",
 			"dates": "2016",
 			"description": "After learning HTML, CSS and some basic JavaScript, as a first project " +
 							"for the Udacity Front End Nanodegree we were asked to build a Portfolio Website.",
@@ -128,6 +129,7 @@ var projects = {
 		{
 			"start": "2016",
 			"title": "Arcade Game Clone",
+			"url": "",
 			"dates": "2016",
 			"description": "This is the third project in the Udacity Front End Nanodegree. " +
 			                "After learning Object Oriented JavaScript and HTML5 canvas, I " +
@@ -137,6 +139,7 @@ var projects = {
 		{
 			"start": "2016",
 			"title": "Neighborhood Map",
+			"url": "",
 			"dates": "2016",
 			"description": "This is the fifth project in the Udacity Front End Nanodegree. " +
 			                "We were asked to build a map application using all the techniques " +
@@ -158,7 +161,8 @@ var projects = {
 		$(".project-panel:last").append(formattedFirstProjectDescription);
 		// Iterate through the images array in each project
 		for (var j = 0; j < projects.projects[0].images.length; j++) {
-			var formattedFirstProjectImage = HTMLfirstProjectImage.replace("%data%", projects.projects[0].images[0]);
+			var formattedFirstProjectImage = HTMLfirstProjectImage.replace("%url%",
+												projects.projects[0].url).replace("%data%", projects.projects[0].images[j]);
 			$(".project-panel:last").append(formattedFirstProjectImage);
 		}
 		for (var i = 1; i < projects.projects.length; i++) {
@@ -172,7 +176,8 @@ var projects = {
 			$(".project-panel:last").append(formattedProjectDescription);
 			// Iterate through the images array in each project
 			for (var k = 0; k < projects.projects[i].images.length; k++) {
-				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[0]);
+				var formattedProjectImage = HTMLprojectImage.replace("%url%",
+												projects.projects[i].url).replace("%data%", projects.projects[i].images[k]);
 				$(".project-panel:last").append(formattedProjectImage);
 			}
 		}

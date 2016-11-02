@@ -357,8 +357,13 @@ p.panel {
   width: 30%;
 }
 
-.img-panel {
+.a-panel {
   width: 50%;
+  padding: 10px;
+}
+
+.img-panel {
+  width: 100%;
 }
 
 #projects .project-panel {
@@ -408,9 +413,11 @@ ul {
   display: none;
 }
 
+/*
 img {
   padding: 10px;
 }
+*/
 
 span {
   padding: 5px;
@@ -708,7 +715,7 @@ p.panel {
   width: 100%;
 }
 
-.img-panel {
+.a-panel {
   width: 100%;
   padding: 2% 0;
 }
