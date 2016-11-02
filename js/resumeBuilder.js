@@ -1,4 +1,4 @@
-var skills = ["HTML", "CSS", "Javascript", "jQuery"];
+var skills = ["HTML", "CSS", "JavaScript", "jQuery"];
 var hobbies = ["reading", "cinema", "sports"];
 var bio = {
 	"name": "Daniele Erbì",
@@ -85,11 +85,11 @@ var work = {
 			"title": "Senior Software Engineer",
 			"location": "Berlin, DE",
 			"dates": "2010 - 2015",
-			"description": "Built a new connected car feature."
+			"description": "Built software for a connected car."
 		},
 		{
 			"start": "2006",
-			"employer": "Ice Cream Inc.",
+			"employer": "New Ice Cream Inc.",
 			"title": "Software Engineer",
 			"location": "Milan, IT",
 			"dates": "2006 - 2010",
@@ -121,7 +121,7 @@ var projects = {
 			"start": "2016",
 			"title": "Portfolio Website",
 			"dates": "2016",
-			"description": "After learning HTML, CSS and some basic Javascript, as a first project " +
+			"description": "After learning HTML, CSS and some basic JavaScript, as a first project " +
 							"for the Udacity Front End Nanodegree we were asked to build a Portfolio Website.",
 			"images": ["images/portfolio-website.png"]
 		},
@@ -130,7 +130,7 @@ var projects = {
 			"title": "Arcade Game Clone",
 			"dates": "2016",
 			"description": "This is the third project in the Udacity Front End Nanodegree. " +
-			                "After learning Object Oriented Javascript and HTML5 canvas, I " +
+			                "After learning Object Oriented JavaScript and HTML5 canvas, I " +
 			                "cloned an arcade game to showcase my new wonderful skills.",
 			"images": ["images/arcade-game-clone.svg"]
 		},
@@ -140,7 +140,7 @@ var projects = {
 			"dates": "2016",
 			"description": "This is the fifth project in the Udacity Front End Nanodegree. " +
 			                "We were asked to build a map application using all the techniques " +
-			                "and new skills that we learned in this nanodegree. ",
+			                "and new skills that we learned in this Nanodegree.",
 			"images": ["images/neighborhood-map.svg"]
 		}
 	],
@@ -182,15 +182,6 @@ var projects = {
 var education = {
 	"schools": [
 		{
-			"start": "2000",
-			"name": "Università degli Studi di Cagliari",
-			"location": "Cagliari, IT",
-			"degree": "BA",
-			"majors": ["Philosophy", "History", "Literature"],
-			"dates": "2000 - 2004",
-			"url": "http://www.unica.it/"
-		},
-		{
 			"start": "2004",
 			"name": "Università degli Studi di Cagliari",
 			"location": "Cagliari, IT",
@@ -199,6 +190,16 @@ var education = {
 			"dates": "2004 - 2006",
 			"url": "http://www.unica.it/"
 		},
+		{
+			"start": "2000",
+			"name": "Università degli Studi di Cagliari",
+			"location": "Cagliari, IT",
+			"degree": "BA",
+			"majors": ["Philosophy", "History", "Literature"],
+			"dates": "2000 - 2004",
+			"url": "http://www.unica.it/"
+		},
+
 	],
 	"onlineCourses": [
 		{
