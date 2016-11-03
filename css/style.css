@@ -9,361 +9,340 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-
-
-/* This is repeated content */
-#aside {
-  width:25%;
-
-  /* this border should not be on small screens
-  border-right: 2px solid white;
-  */
-}
-
-#header {
-  width: 75%;
-  text-align: center;
-}
-
-#workExperience {
-  width: 70%;
-}
-
-#skillsDiv {
-  width: 30%;
-}
-
-#projects {
-  width: 100%;
-}
-
-#education {
-  width: 70%;
-}
-
-#hobbiesDiv {
-  width: 30%;
-}
-
-#lets-connect {
-  width: 100%;
-  text-align: center;
-}
-
-
-
-
-
-
-/*
-#main1 {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
-
-.clear-fix {
-  overflow: auto;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
-  font-size: 40px;
-  color: #e8d291;
-  line-height: 48px;
-  /*display: inline;*/
+    font-size: 40px;
+    color: #e8d291;
+    line-height: 48px;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #4a4a4a;
-  line-height: 29px;
-  padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #4a4a4a;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #4a4a4a;
-  line-height: 22px;
+    font-style: italic;
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 22px;
+    padding: 20px 0 5px 0;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
 }
 
 h2,
 h4,
 h5 {
-  padding: 10px 5%;
-
-}
-
-h3 {
-  padding: 20px 0 5px 0;
-}
-
-.light-green-date-text {
-  font-style: italic;
-  font-size: 2em;
-  color: #baeaa7;
-  line-height: 16px;
-  float: left;
-  width: 15%;
-}
-
-.light-red-date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #e67070;
-  line-height: 16px;
-  float: left;
-}
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #e67070;
-  line-height: 16px;
-  float: right;
-
+    padding: 10px 5%;
 }
 
 p {
-  font-size: 16px;
-  color: #333;
-  line-height: 21px;
+    font-size: 16px;
+    color: #333;
+    line-height: 21px;
 }
 
 a {
-  color: #027092;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #027092;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
-.role-header {
-  padding: 0 0 5% 0;
+ul {
+    list-style-type: none;
+}
+
+span {
+    padding: 5px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #aside {
-  text-align: center;
+    width: 25%;
+}
+
+#header {
+    width: 75%;
+    text-align: center;
+}
+
+#workExperience {
+    width: 70%;
+}
+
+#skillsDiv {
+    width: 30%;
+}
+
+#projects {
+    width: 100%;
+}
+
+#education {
+    width: 70%;
+}
+
+#hobbiesDiv {
+    width: 30%;
+}
+
+#lets-connect {
+    width: 100%;
+    text-align: center;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
+}
+
+.light-green-date-text {
+    font-style: italic;
+    font-size: 2em;
+    color: #baeaa7;
+    line-height: 16px;
+    float: left;
+    width: 15%;
+}
+
+.light-red-date-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #e67070;
+    line-height: 16px;
+    float: left;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #e67070;
+    line-height: 16px;
+    float: right;
+}
+
+.role-header {
+    padding: 0 0 5% 0;
+}
+
+#aside {
+    text-align: center;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #fff;
-  line-height: 28px;
-  width: 80%;
-  position: relative;
-  top: 20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+    line-height: 28px;
+    width: 80%;
+    position: relative;
+    top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .url-anchor {
-  margin: 5px 0 15px 0;
+    margin: 5px 0 15px 0;
 }
 
 .online-title {
-  margin: 0 0 15px 0;
+    margin: 0 0 15px 0;
 }
 
-
-
 #topContacts {
-  position: relative;
-  top: 80px;
+    position: relative;
+    top: 80px;
 }
 
 #skills-h3 {
-  color: #e8d291;
-  display: none;
+    color: #e8d291;
+    display: none;
 }
 
 #hobbies-h3 {
-  color: #e8d291;
-  display: none;
+    color: #e8d291;
+    display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+    background-color: #f5ae23;
 }
 
 .orange-text {
-  color: #f5ae23;
+    color: #f5ae23;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+    font-weight: bold;
+    color: #fff;
 }
 
 .gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+    background-color: #4a4a4a;
 }
 
 /* Custom colors */
 .light-gray-text {
-  color: #dcdcdc;
+    color: #dcdcdc;
 }
 
 .dark-gray-text {
-  color: #4a4a4a;;
+    color: #4a4a4a;
+    ;
 }
 
 .light-blue {
-  background-color: #449c9c;
+    background-color: #449c9c;
 }
 
 .sand {
-  background-color: #e8d291;
+    background-color: #e8d291;
 }
 
 .sand-text {
-  color: #e8d291;
-  font-weight: bold;
+    color: #e8d291;
+    font-weight: bold;
 }
 
 .blue-text {
-  color: #449c9c;
-  font-weight: bold;
+    color: #449c9c;
+    font-weight: bold;
 }
 
 .bright-red-text {
-  color: #c12d2d;
+    color: #c12d2d;
 }
 
-
 .header-on-sand {
-  color: #449c9c;
+    color: #449c9c;
 }
 
 .header-on-blue {
-  color: #e8d291;
+    color: #e8d291;
 }
 
 .anchor-text-on-blue {
-  color: #e4c366;
+    color: #e4c366;
 }
 
 /* TODO: Replace with image later */
 #aside,
 #header {
-  background-color: #449c9c;
+    background-color: #449c9c;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .contacts-at-top {
-  padding: 0 20%;
+    padding: 0 20%;
 }
 
 .contacts-at-bottom {
-  padding: 0 30% 2% 30%;
+    padding: 0 30% 2% 30%;
 }
 
 .flex-column {
-  display: inherit;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+    display: inherit;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
 
 .skills-text {
-  background-color: #696969;
-  padding: 5%;
-  margin: 5%;
-  width: 30%;
-  display: inline-flex;
-  border-radius: 10px;
+    background-color: #696969;
+    padding: 5%;
+    margin: 5%;
+    width: 30%;
+    display: inline-flex;
+    border-radius: 10px;
 }
 
 .skills-text:hover {
-  background-color: #449c9c;
-  border-radius: 0px;
+    background-color: #449c9c;
+    border-radius: 0px;
 }
 
 .hobbies-text {
-  background-color: #696969;
-  padding: 5%;
-  margin: 5%;
-  width: 30%;
-  display: inline-flex;
-  border-radius: 10px;
+    background-color: #696969;
+    padding: 5%;
+    margin: 5%;
+    width: 30%;
+    display: inline-flex;
+    border-radius: 10px;
 }
 
 .hobbies-text:hover {
-  background-color: #449c9c;
-  transform: translate(0, -10px);
+    background-color: #449c9c;
+    transform: translate(0, -10px);
 }
 
 .hobbies-items {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-items {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p.panel {
-  width: 30%;
+    width: 30%;
 }
 
 .a-panel {
-  width: 50%;
-  padding: 10px;
+    width: 50%;
+    padding: 10px;
 }
 
 .img-panel {
-  width: 100%;
+    width: 100%;
 }
 
 #projects .project-panel {
@@ -371,386 +350,300 @@ p.panel {
     border: 0.4px solid white;
     padding: 2%;
 }
+
 #projects .project-panel.active {
     display: flex;
-  align-items: center;
+    align-items: center;
 }
 
 .tabs-display {
-  display: flex;
+    display: flex;
 }
-/*
-.fa-mobile .text {
-  visibility:hidden;
-  color: #fff;
-}
-
-.fa-mobile:hover .text {
-  visibility:visible;
-}
-*/
-
-
-/*
-.center-content {
-  padding: 2.5% 5%;
-}
-*/
-
 
 .center-text {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
+    text-align: center;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-}
-
-/*
-img {
-  padding: 10px;
-}
-*/
-
-span {
-  padding: 5px;
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
 }
 
 /* Add styles to the wrapper div so that it crops the image */
 .picture-elem {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 10px;
 }
 
 .picture-elem img {
-  width: auto;
-  height: 100%;
-  margin-left: -35px;
-  margin-top: -10px;
+    width: auto;
+    height: 100%;
+    margin-left: -35px;
+    margin-top: -10px;
 }
-
-/*
-#lets-connect {
-  text-align: center;
-}
-*/
-
 
 /* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    /*margin-top: 5%;*/
-  }
-}
-
 @media only screen and (max-width:900px) {
-  h1 {
-    padding-top: 10px;
-  }
+    h1 {
+        padding-top: 10px;
+    }
 
-  .biopic {
-    width: 175px;
-  }
+    .biopic {
+        width: 175px;
+    }
 
-  .welcome-message {
-    top: 0;
-  }
+    .welcome-message {
+        top: 0;
+    }
 
-  #topContacts {
-    top: 0;
-  }
+    #topContacts {
+        top: 0;
+    }
 
-  .contacts-at-top {
-    padding: 2% 30%;
-  }
+    .contacts-at-top {
+        padding: 2% 30%;
+    }
 
-  .picture-elem {
-    display: none;
-  }
+    .picture-elem {
+        display: none;
+    };
 }
 
 @media only screen and (max-width: 750px) {
+    .biopic {
+        width: 150px;
+    }
 
-  /*
-  #lets-connect {
-    margin-top: 10%;
-  }
-*/
-
-  .biopic {
-    width: 150px;
-  }
-
-
-
-  #topContacts {
-    top: 0;
-  }
+    #topContacts {
+        top: 0;
+    };
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+    display: block;
+    height: 100%;
+    margin: 0 5%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 100px; /*5%;*/
+    height: 400px;
+    width: 100%;
+    padding-bottom: 100px;
 }
-
-
-
-
 
 @media only screen and (min-width: 500px)  and (max-width: 899px) {
-  h1 {
-    font-size: 50px;
-  }
+    h1 {
+        font-size: 50px;
+    }
 
-  .phone-text {
-    font-size: 1.5em;
-  }
+    .phone-text {
+        font-size: 1.5em;
+    }
 
-  #aside {
-    width:100%;
+    #aside {
+        width: 100%;
+    }
 
-  /* this border should not be on small screens
-  border-right: 2px solid white;
-  */
-  }
+    #header {
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
 
-  #header {
-    width: 100%;
-    text-align: center;
-    order: 3;
-  }
+    #workExperience {
+        width: 100%;
+        order: 4;
+    }
 
-  #workExperience {
-    width: 100%;
-    order: 4;
-  }
+    #skillsDiv {
+        width: 50%;
+        order: 1;
+    }
 
-  #skillsDiv {
-    width: 50%;
-    order: 1;
-  }
+    #projects {
+        width: 100%;
+        order: 5;
+    }
 
-  #projects {
-    width: 100%;
-    order: 5;
-  }
+    #education {
+        width: 100%;
+        order: 6;
+    }
 
-  #education {
-    width: 100%;
-    order: 6;
-  }
+    #hobbiesDiv {
+        width: 50%;
+        order: 2;
+    }
 
-  #hobbiesDiv {
-    width: 50%;
-    order: 2;
-  }
+    #mapDiv {
+        order: 7;
+    }
 
-  #mapDiv {
-    order: 7;
-  }
-
-  #lets-connect {
-    width: 100%;
-    text-align: center;
-    order: 8;
-  }
-
-
-
+    #lets-connect {
+        width: 100%;
+        text-align: center;
+        order: 8;
+    };
 }
 
-
 @media only screen and (min-width: 900px) {
+    #aside {
+        width: 25%;
+        order: 0;
+    }
 
-  /*
-  #header1,
-  #header2 {
-    width: 50%;
-  }
-*/
+    #header {
+        width: 75%;
+        order: 1;
+    }
 
-  #aside {
-    width:25%;
-    order: 0;
+    #workExperience {
+        width: 70%;
+        order: 2;
+    }
 
-  /* this border should not be on small screens
-  border-right: 2px solid white;
-  */
-  }
+    #skillsDiv {
+        width: 30%;
+        order: 3;
+    }
 
-  #header {
-    width: 75%;
-    order: 1;
-  }
+    #projects {
+        width: 100%;
+        order: 4;
+    }
 
-  #workExperience {
-    width: 70%;
-    order: 2;
-  }
+    #education {
+        width: 70%;
+        order: 5;
+    }
 
-  #skillsDiv {
-    width: 30%;
-    order: 3;
-  }
+    #hobbiesDiv {
+        width: 30%;
+        order: 6;
+    }
 
-  #projects {
-    width: 100%;
-    order: 4;
-  }
+    #mapDiv {
+        order: 7;
+    }
 
-  #education {
-    width: 70%;
-    order: 5;
-  }
+    #lets-connect {
+        width: 100%;
+        order: 8;
+    }
 
-  #hobbiesDiv {
-    width: 30%;
-    order: 6;
-  }
+    #skills-h3,
+    #hobbies-h3,
+    .biopic {
+        display: block;
+    }
 
-  #mapDiv {
-    order: 7;
-  }
-
-  #lets-connect {
-    width: 100%;
-    order: 8;
-  }
-
-  #skills-h3,
-  #hobbies-h3,
-  .biopic {
-    display: block;
-  }
-
-/* Prevents the school name links to take up the entire row and overlap other elements */
+/* Prevents the school name links to take up the entire row and overlap other elements */;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 549px) {
-  .education-link {
-    margin-right: 25%;
-  }
+    .education-link {
+        margin-right: 25%;
+    };
 }
 
 @media only screen and (min-width: 550px) {
-  .education-link {
-    margin-right: 50%;
-  }
+    .education-link {
+        margin-right: 50%;
+    };
 }
-
-
 
 @media only screen and (max-width: 499px) {
-  #aside {
-    width:100%;
+    #aside {
+        width: 100%;
+    }
 
-  /* this border should not be on small screens
-  border-right: 2px solid white;
-  */
-  }
+    #header {
+        width: 100%;
+        text-align: center;
+    }
 
-  #header {
-    width: 100%;
-    text-align: center;
-  }
+    #workExperience {
+        width: 100%;
+    }
 
-  #workExperience {
-    width: 100%;
-  }
+    #skillsDiv {
+        width: 100%;
+    }
 
-  #skillsDiv {
-    width: 100%;
-  }
+    #projects {
+        width: 100%;
+    }
 
-  #projects {
-    width: 100%;
-  }
+    #education {
+        width: 100%;
+    }
 
-  #education {
-    width: 100%;
-  }
+    #hobbiesDiv {
+        width: 100%;
+        background-color: #449c9c;
+    }
 
-  #hobbiesDiv {
-    width: 100%;
-    background-color: #449c9c;
-  }
+    #lets-connect {
+        width: 100%;
+    }
 
-  #lets-connect {
-    width: 100%;
-  }
+    .welcome-message {
+        display: none;
+    }
 
-  .welcome-message {
-    display: none;
-  }
+    #topContacts {
+        justify-content: center;
+    }
 
-   #topContacts {
-    justify-content: center;
-  }
+    #projects .project-panel.active {
+        display: inline-block;
+    }
 
-  #projects .project-panel.active {
-    display: inline-block;
-}
+    p.panel {
+        width: 100%;
+    }
 
-p.panel {
-  width: 100%;
-}
+    .a-panel {
+        width: 100%;
+        padding: 2% 0;
+    }
 
-.a-panel {
-  width: 100%;
-  padding: 2% 0;
-}
+    .light-green-date-text {
+        text-align: center;
+        padding: 5% 0;
+        float: none;
+        width: 100%;
+    }
 
-.light-green-date-text {
-  text-align: center;
-  padding: 5% 0;
-  float: none;
-  width: 100%;
-}
+    .tab-text {
+        font-size: 1em;
+    }
 
-.tab-text {
-    font-size: 1em;
-  }
+    .hobbies-header {
+        color: #e8d291;
+    }
 
-  .hobbies-header {
-    color: #e8d291;
-  }
-
-  .hobbies-text:hover {
-  background-color: #e8d291;
-  transform: translate(0, -10px);
-}
-
+    .hobbies-text:hover {
+        background-color: #e8d291;
+        transform: translate(0, -10px);
+    };
 }
 
 @media only screen and (max-width: 320px) {
-  #map {
-    height: 98%;
-  }
+    #map {
+        height: 98%;
+    }
 
-  .tab-text {
-    font-size: 0.692em;
-  }
-
+    .tab-text {
+        font-size: 0.692em;
+    };
 }
 
 .js-tabs .tab {
@@ -764,12 +657,15 @@ p.panel {
     color: #fff;
     border: 0.5px solid white;
 }
+
 .js-tabs .tab:focus {
     box-shadow: 0 0 1px 1px rgba(0,127,255,.5);
 }
+
 .js-tabs .tab:hover {
     background-color: #e8d291;
 }
+
 .js-tabs .tab.active {
     background-color: #e8d291;
     /*border-bottom: .3em solid #fff;*/
@@ -781,181 +677,3 @@ p.panel {
     background-color: #449c9c;
     padding: .5em;
 }
-
-
-
-/*
-.project-panel1 {
-  display: flex;
-  align-items: center;
-}
-*/
-
-
-
-/*
-.js-tabs .panel {
-    display: none;
-}
-.js-tabs .panel.active {
-    display: block;
-}
-
-/* Android 2.3 :checked fix
-@keyframes fake {
-    from {
-        opacity: 1;
-    }
-    to {
-        opactity: 1
-    }
-}
-
-body {
-    animation: fake 1s infinite;
-}
-
-.radio-tabs .state {
-    position: absolute;
-    left: -10000px;
-}
-#starks:focus ~ .tabs #starks-tab,
-#lannisters:focus ~ .tabs #lannisters-tab,
-#targaryens:focus ~ .tabs #targaryens-tab {
-    /*box-shadow: 0 0 3px 3px rgba(0,127,255,.5);*/
-    /*background-color: blue;
-}
-
-.radio-tabs .tab {
-    display: inline-block;
-    padding: .5em;
-    vertical-align: top;
-    background-color: #696969;
-    cursor: hand;
-    cursor: pointer;
-}
-.radio-tabs .tab:hover {
-    background-color: #e8d291;
-}
-#starks[aria-selected] ~ .tabs #starks-tab,
-#lannisters[aria-selected] ~ .tabs #lannisters-tab,
-#targaryens[aria-selected] ~ .tabs #targaryens-tab,
-#starks:checked ~ .tabs #starks-tab,
-#lannisters:checked ~ .tabs #lannisters-tab,
-#targaryens:checked ~ .tabs #targaryens-tab {
-    background-color: #e8d291;
-    /*border-bottom: .3em solid #fff;
-    cursor: default;
-}
-
-.radio-tabs .panels {
-    background-color: #449c9c;
-    padding: .5em;
-}
-.radio-tabs .panel {
-    display: none;
-}
-#starks[aria-selected] ~ .panels #starks-panel,
-#lannisters[aria-selected] ~ .panels #lannisters-panel,
-#targaryens[aria-selected] ~ .panels #targaryens-panel,
-#starks:checked ~ .panels #starks-panel,
-#lannisters:checked ~ .panels #lannisters-panel,
-#targaryens:checked ~ .panels #targaryens-panel {
-    display: block;
-}
-
-/*
-#projects {
-  width: 100%;
-  display: inline-block;
-}
-
-.project-links:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.project-links li {
-  margin: 0px 5px;
-  float: left;
-  list-style: none;
-}
-
-.project-links a {
-  padding: 9px 15px;
-  display: inline-block;
-  border-radius: 3px 3px 0px 0px;
-  background: #7fb5da;
-  font-size: 16px;
-  font-weight: 600;
-  color: #4c4c4c;
-  transition: all linear 0.15s;
-}
-
-.project-links a:hover {
-  background: #a7cce5;
-  text-decoration: none;
-}
-
-li.active a, li.active a:hover {
-  background: #fff;
-  color: #4c4c4c;
-}
-
-.project-content {
-  padding: 15px;
-  border-radius: 3px;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-  background: #fff;
-}
-
-.project {
-  display: none;
-}
-
-.project.active {
-  display: block;
-}
-
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Float the list items side by side
-ul.tab li {float: left;}
-
-/* Style the links inside the list items
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of links on hover
-ul.tab li a:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class
-ul.tab li a:focus, .active {
-    background-color: #ccc;
-}
-
-/* Style the tab content
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-*/
