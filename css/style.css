@@ -82,11 +82,11 @@ span {
     flex-wrap: wrap;
 }
 
-#aside {
+#header {
     width: 25%;
 }
 
-#header {
+#messageDiv {
     width: 75%;
     text-align: center;
 }
@@ -111,6 +111,18 @@ span {
     width: 30%;
 }
 
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
 #lets-connect {
     width: 100%;
     text-align: center;
@@ -126,7 +138,7 @@ span {
     padding: 0 5%;
 }
 
-.light-green-date-text {
+.project-date-text {
     font-style: italic;
     font-size: 2em;
     color: #baeaa7;
@@ -135,7 +147,9 @@ span {
     width: 15%;
 }
 
-.light-red-date-text {
+.work-date-text,
+.school-date-text,
+.online-date-text {
     font-style: italic;
     font-size: 14px;
     color: #e67070;
@@ -143,7 +157,8 @@ span {
     float: left;
 }
 
-.location-text {
+.work-location-text,
+.school-location-text {
     font-style: italic;
     font-size: 14px;
     color: #e67070;
@@ -155,7 +170,7 @@ span {
     padding: 0 0 5% 0;
 }
 
-#aside {
+#header {
     text-align: center;
 }
 
@@ -195,76 +210,72 @@ span {
     display: none;
 }
 
-.orange {
-    background-color: #f5ae23;
-}
-
-.orange-text {
-    color: #f5ae23;
-}
-
-.white-text {
+.contact-generic-text,
+.email-icon,
+.linkedin-icon,
+.twitter-icon,
+.github-icon,
+.github-icon,
+.phone-text,
+.location-text,
+.skills-items-text,
+.hobbies-items-text {
     font-weight: bold;
     color: #fff;
 }
 
-.gray {
-    background-color: #f3f3f3;
-    padding-bottom: 10px;
-    clear: both;
-}
-
-.dark-gray {
-    background-color: #4a4a4a;
-}
-
 /* Custom colors */
-.light-gray-text {
+.project-description-text {
     color: #dcdcdc;
 }
 
-.dark-gray-text {
+.work-description-text {
     color: #4a4a4a;
     ;
 }
 
-.light-blue {
+.projects-background,
+.map-background,
+.connect-background {
     background-color: #449c9c;
 }
 
-.sand {
+.skills-background,
+.hobbies-background,
+.work-background,
+.education-background,
+.connect-header-background {
     background-color: #e8d291;
 }
 
-.sand-text {
+.projects-header-text,
+.map-header-text,
+.project-title,
+.blog-text {
     color: #e8d291;
     font-weight: bold;
 }
 
-.blue-text {
+.skills-header-text,
+.hobbies-header-text,
+.work-experience-header-text,
+.education-header-text,
+.connect-header-text,
+.work-employer-text,
+.school-name-text,
+.online-name-text {
     color: #449c9c;
     font-weight: bold;
 }
 
-.bright-red-text {
+.school-major-text,
+.online-title-text {
     color: #c12d2d;
 }
 
-.header-on-sand {
-    color: #449c9c;
-}
-
-.header-on-blue {
-    color: #e8d291;
-}
-
-.anchor-text-on-blue {
-    color: #e4c366;
-}
-
 /* TODO: Replace with image later */
-#aside,
-#header {
+#header,
+#messageDiv {
     background-color: #449c9c;
 }
 
@@ -332,7 +343,7 @@ span {
     margin-right: auto;
 }
 
-p.panel {
+.project-description {
     width: 30%;
 }
 
@@ -347,7 +358,7 @@ p.panel {
 
 #projects .project-panel {
     display: none;
-    border: 0.4px solid white;
+    border: 0.4px solid #fff;
     padding: 2%;
 }
 
@@ -413,7 +424,7 @@ p.panel {
 
     .picture-elem {
         display: none;
-    };
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -423,19 +434,7 @@ p.panel {
 
     #topContacts {
         top: 0;
-    };
-}
-
-#map {
-    display: block;
-    height: 100%;
-    margin: 0 5%;
-}
-
-#mapDiv {
-    height: 400px;
-    width: 100%;
-    padding-bottom: 100px;
+    }
 }
 
 @media only screen and (min-width: 500px)  and (max-width: 899px) {
@@ -447,11 +446,11 @@ p.panel {
         font-size: 1.5em;
     }
 
-    #aside {
+    #header {
         width: 100%;
     }
 
-    #header {
+    #messageDiv {
         width: 100%;
         text-align: center;
         order: 3;
@@ -490,16 +489,16 @@ p.panel {
         width: 100%;
         text-align: center;
         order: 8;
-    };
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    #aside {
+    #header {
         width: 25%;
         order: 0;
     }
 
-    #header {
+    #messageDiv {
         width: 75%;
         order: 1;
     }
@@ -543,28 +542,32 @@ p.panel {
     .biopic {
         display: block;
     }
+}
 
 /* Prevents the school name links to take up the entire row and overlap other elements */;
-}
 
 @media only screen and (min-width: 360px) and (max-width: 549px) {
     .education-link {
         margin-right: 25%;
-    };
+    }
 }
 
 @media only screen and (min-width: 550px) {
     .education-link {
         margin-right: 50%;
-    };
+    }
+
+    .location-text {
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 499px) {
-    #aside {
+    #header {
         width: 100%;
     }
 
-    #header {
+    #messageDiv {
         width: 100%;
         text-align: center;
     }
@@ -606,7 +609,7 @@ p.panel {
         display: inline-block;
     }
 
-    p.panel {
+    .project-description {
         width: 100%;
     }
 
@@ -615,7 +618,7 @@ p.panel {
         padding: 2% 0;
     }
 
-    .light-green-date-text {
+    .project-date-text {
         text-align: center;
         padding: 5% 0;
         float: none;
@@ -633,19 +636,24 @@ p.panel {
     .hobbies-text:hover {
         background-color: #e8d291;
         transform: translate(0, -10px);
-    };
+    }
 }
 
 @media only screen and (max-width: 320px) {
+    h2 {
+        font-size: 22px;
+    }
+
     #map {
         height: 98%;
     }
 
     .tab-text {
         font-size: 0.692em;
-    };
+    }
 }
 
+/* Set style properties for tabs in the project section */
 .js-tabs .tab {
     display: inline-block;
     padding: .5em;
@@ -655,7 +663,7 @@ p.panel {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    border: 0.5px solid white;
+    border: 0.5px solid #fff;
 }
 
 .js-tabs .tab:focus {
@@ -664,6 +672,7 @@ p.panel {
 
 .js-tabs .tab:hover {
     background-color: #e8d291;
+    color: #e67070;
 }
 
 .js-tabs .tab.active {

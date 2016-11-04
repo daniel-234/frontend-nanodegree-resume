@@ -30,11 +30,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!--
-        Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
-        -->
+    <!-- Uncomment the <script> tag below if the map with the given key doesn't work and comment the other one! -->
     <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
-
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBSPjH1_4zC5RQxfXyHXvI-3gTesbuKoA4"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -43,31 +40,31 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 <body>
     <div class="container" id="main">
         <!--
-            Everything from here to the <script> tag below is the skeleton of your
-            website. Your code will add information to each of the sections of the
-            resume below. You can pretty easily figure out what each section will
-            display by looking at the id or at what's written between the <h2> tags.
-            -->
-        <div id="aside" class="center-content clear-fix"></div>
+        Everything from here to the <script> tag below is the skeleton of your
+        website. Your code will add information to each of the sections of the
+        resume below. You can pretty easily figure out what each section will
+        display by looking at the id or at what's written between the <h2> tags.
+        -->
+        <div id="header" class="center-content clear-fix"></div>
 
-        <div id="header" class="center-content clear-fix">
+        <div id="messageDiv" class="center-content clear-fix">
             <ul id="topContacts" class="flex-box contacts-at-top"></ul>
         </div>
 
-        <div id="skillsDiv" class="sand">
-            <h2 class="blue-text center-text">Skills</h2>
+        <div id="skillsDiv" class="skills-background">
+            <h2 class="skills-header-text center-text">Skills</h2>
         </div>
 
-        <div id="hobbiesDiv" class="sand">
-            <h2 class="blue-text center-text hobbies-header">Hobbies</h2>
+        <div id="hobbiesDiv" class="hobbies-background">
+            <h2 class="hobbies-header-text center-text hobbies-header">Hobbies</h2>
         </div>
 
-        <div id="workExperience" class="sand">
-            <h2 class="blue-text">Work Experience</h2>
+        <div id="workExperience" class="work-background">
+            <h2 class="work-experience-header-text">Work Experience</h2>
         </div>
 
-        <div id="projects" class="js-tabs light-blue">
-            <h2 class="sand-text">Projects</h2>
+        <div id="projects" class="js-tabs projects-background">
+            <h2 class="projects-header-text">Projects</h2>
 
             <!-- .tabs' children are .tab anchor tags held by variables named HTMLprojectTitle -->
             <div class="tabs tabs-display">
@@ -79,17 +76,16 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
             </div>
         </div>
 
-
-        <div id="education" class="sand">
-            <h2 class="blue-text">Education</h2>
+        <div id="education" class="education-background">
+            <h2 class="education-header-text">Education</h2>
         </div>
 
-        <div id="mapDiv" class="light-blue">
-            <h2 class="sand-text">Where I've Lived and Worked</h2>
+        <div id="mapDiv" class="map-background">
+            <h2 class="map-header-text">Where I've Lived and Worked</h2>
         </div>
 
-        <div id="lets-connect" class="light-blue">
-            <h2 class="sand center-text blue-text">Let's Connect</h2>
+        <div id="lets-connect" class="connect-background">
+            <h2 class="connect-header-background center-text connect-header-text">Let's Connect</h2>
             <ul id="footerContacts" class="flex-box contacts-at-bottom"></ul>
         </div>
     </div>
@@ -115,7 +111,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         -->
     <script src="js/jQuery.js"></script>
 
-
     <!-- More on helper.js in the class -->
     <script src="js/helper.js"></script>
 
@@ -127,12 +122,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <script src="js/resumeBuilder.js"></script>
 
     <!--
-        These scripts are written in JavaScript. You'll be breaking them down as part of
-        a quiz. Essentially, the next few lines are checking to see if you have not
-        changed each section of the resume. If you have not made any changes to a section
-        of the resume, then that part of the resume does not show up. More on this in the
-        course.
-        -->
+    These scripts are written in JavaScript. You'll be breaking them down as part of
+    a quiz. Essentially, the next few lines are checking to see if you have not
+    changed each section of the resume. If you have not made any changes to a section
+    of the resume, then that part of the resume does not show up. More on this in the
+    course.
+    -->
 
     <script>
         // Notice how all of a sudden there's JavaScript inside this HTML
@@ -147,7 +142,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         /*
             an opening and closing set of slash asterisks for block comments.
         */
-
 
         if (document.getElementsByClassName('flex-item').length === 0) {
             document.getElementById('topContacts').style.display = 'none';

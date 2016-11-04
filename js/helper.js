@@ -11,56 +11,56 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<h3 class="dark-gray-text role-header">%data%</h3>';
+var HTMLheaderRole = '<h3 class="header-role-text role-header">%data%</h3>';
 
-var HTMLcontactGeneric = '<a class="flex-item"><span class="sand-text">%contact%</span><span class="white-text">%data%</span></a>';
-var HTMLemail = '<a class="flex-item" href="mailto:%data%"><span class="white-text fa fa-envelope-o fa-lg" aria-hidden="true"></span></a>';
-var HTMLlinkedin = '<a class="flex-item" href="https://uk.linkedin.com/in/%data%" target="_blank"><span class="white-text fa fa-linkedin fa-lg" aria-hidden="true"></span></a>';
-var HTMLtwitter = '<a class="flex-item" href="https://twitter.com/%data%" target="_blank"><span class="white-text fa fa-twitter fa-lg" aria-hidden="true"></span></a>';
-var HTMLgithub = '<a class="flex-item" href="https://github.com/%data%" target="_blank"><span class="white-text fa fa-github fa-lg" aria-hidden="true"></span></a>';
-var HTMLblog = '<a class="flex-item"><span class="sand-text">blog</span><span class="white-text">%data%</span></a>';
-var HTMLmobile = '<span class="white-text phone-text fa fa-phone fa-lg" aria-hidden="true"> %data%</span>';
-var HTMLlocation = '<a class="flex-item"><span class="white-text fa fa-map-marker fa" aria-hidden="true"> %data%</span></a>';
+var HTMLcontactGeneric = '<a class="flex-item"><span class="contact-generic-text">%data%</span></a>';
+var HTMLemail = '<a class="flex-item" href="mailto:%data%"><span class="email-icon fa fa-envelope-o fa-lg" aria-hidden="true"></span></a>';
+var HTMLlinkedin = '<a class="flex-item" href="https://uk.linkedin.com/in/%data%" target="_blank"><span class="linkedin-icon fa fa-linkedin fa-lg" aria-hidden="true"></span></a>';
+var HTMLtwitter = '<a class="flex-item" href="https://twitter.com/%data%" target="_blank"><span class="twitter-icon fa fa-twitter fa-lg" aria-hidden="true"></span></a>';
+var HTMLgithub = '<a class="flex-item" href="https://github.com/%data%" target="_blank"><span class="github-icon fa fa-github fa-lg" aria-hidden="true"></span></a>';
+var HTMLblog = '<a class="flex-item"><span class="blog-text">blog</span><span class="blog-icon">%data%</span></a>';
+var HTMLmobile = '<span class="phone-text fa fa-phone fa-lg" aria-hidden="true"> %data%</span>';
+var HTMLlocation = '<a class="flex-item"><span class="location-text fa fa-map-marker fa" aria-hidden="true"> %data%</span></a>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item skills-text"><span class="white-text skills-items">%data%</span></li>';
+var HTMLskills = '<li class="flex-item skills-text"><span class="skills-items-text skills-items">%data%</span></li>';
 
 var HTMLhobbiesStart = '<ul id="hobbies" class="flex-column"></ul>';
-var HTMLhobbies = '<li class="flex-item hobbies-text"><span class="white-text hobbies-items">%data%</span></li>';
+var HTMLhobbies = '<li class="flex-item hobbies-text"><span class="hobbies-items-text hobbies-items">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<p class="blue-text">%data%';
+var HTMLworkEmployer = '<p class="work-employer-text">%data%';
 var HTMLworkTitle = ' - %data%</p>';
-var HTMLworkDates = '<div class="light-red-date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p class="dark-gray-text"><br>%data%</p>';
+var HTMLworkDates = '<div class="work-date-text">%data%</div>';
+var HTMLworkLocation = '<div class="work-location-text">%data%</div>';
+var HTMLworkDescription = '<p class="work-description-text"><br>%data%</p>';
 
 /* The two variables used to point to apparently the same member are needed to keep each item from the first
    JSON object take the class active and be displayed as the page loads */
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLfirstProjectTitle = '<a class="sand-text tab tab-text active" href="#selected-panel">%data%</a>';
-var HTMLprojectTitle = '<a class="sand-text tab tab-text" href="#selected-panel">%data%</a>';
-var HTMLfirstProjectDates = '<div class="light-green-date-text panel active">%data%</div>';
-var HTMLprojectDates = '<div class="light-green-date-text panel">%data%</div>';
-var HTMLfirstProjectDescription = '<p class="light-gray-text panel active">%data%</p>';
-var HTMLprojectDescription = '<p class="light-gray-text panel">%data%</p>';
+var HTMLfirstProjectTitle = '<a class="project-title-text tab tab-text active" href="#selected-panel">%data%</a>';
+var HTMLprojectTitle = '<a class="project-title-text tab tab-text" href="#selected-panel">%data%</a>';
+var HTMLfirstProjectDates = '<div class="project-date-text panel active">%data%</div>';
+var HTMLprojectDates = '<div class="project-date-text panel">%data%</div>';
+var HTMLfirstProjectDescription = '<p class="project-description-text project-description panel active">%data%</p>';
+var HTMLprojectDescription = '<p class="project-description-text project-description panel">%data%</p>';
 var HTMLfirstProjectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank" class="a-panel"><img class="img-panel" src="%data%"></a>';
 var HTMLprojectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank"class="a-panel"><img class="img-panel" src="%data%"></a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="%url%" target="_blank" class="blue-text education-link">%data%</a>';
+var HTMLschoolName = '<a href="%url%" target="_blank" class="school-name-text education-link">%data%</a>';
 var HTMLschoolDegree = '<p><br>%data%</p>';
-var HTMLschoolDates = '<div class="light-red-date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em class="bright-red-text"><br>Major: %data%</em>';
+var HTMLschoolDates = '<div class="school-date-text">%data%</div>';
+var HTMLschoolLocation = '<div class="school-location-text">%data%</div>';
+var HTMLschoolMajor = '<em class="school-major-text"><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineSchool = '<a href="%url%" target="_blank" class="blue-text education-link">%data%</a>';
-var HTMLonlineDates = '<div class="light-red-date-text">%data%</div>';
-var HTMLonlineTitle = '<p class="bright-red-text online-title"><br>%data%</p>';
+var HTMLonlineSchool = '<a href="%url%" target="_blank" class="online-name-text education-link">%data%</a>';
+var HTMLonlineDates = '<div class="online-date-text">%data%</div>';
+var HTMLonlineTitle = '<p class="online-title-text online-title"><br>%data%</p>';
 var HTMLonlineURL = '<br><a href="#" target="_blank" class="url-anchor">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';

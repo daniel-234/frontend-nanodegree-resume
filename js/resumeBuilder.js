@@ -26,17 +26,17 @@ var bio = {
         var imageDiv = $("<div class='picture-elem'></div>");
         var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
         var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-        $("#aside").prepend(formattedLocation);
-        $("#aside").prepend(formattedMobile);
-        $("#aside").prepend(formattedRole);
-        $("#aside").prepend(formattedName);
+        $("#header").prepend(formattedLocation);
+        $("#header").prepend(formattedMobile);
+        $("#header").prepend(formattedRole);
+        $("#header").prepend(formattedName);
         $("#topContacts").append(formattedEmail);
         $("#topContacts").append(formattedLinkedin);
         $("#topContacts").append(formattedGitHub);
         $("#topContacts").append(formattedTwitter);
-        $("#aside").prepend(imageDiv);
+        $("#header").prepend(imageDiv);
         $(".picture-elem").prepend(formattedPic);
-        $("#header").prepend(formattedMessage);
+        $("#messageDiv").prepend(formattedMessage);
         $("#footerContacts").append(formattedEmail);
         $("#footerContacts").append(formattedLinkedin);
         $("#footerContacts").append(formattedGitHub);
@@ -47,7 +47,6 @@ var bio = {
                 var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
                 $("#skills").append(formattedSkill);
             }
-
         }
         if (bio.hobbies) {
             $("#hobbiesDiv").append(HTMLhobbiesStart);
@@ -55,10 +54,9 @@ var bio = {
                 var formattedHobbies = HTMLhobbies.replace("%data%", bio.hobbies[j]);
                 $("#hobbies").append(formattedHobbies);
             }
-
         }
     }
-}
+};
 
 var work = {
     "jobs": [{
@@ -99,7 +97,7 @@ var work = {
             $(".work-entry:last").append(formattedWorkDescription);
         }
     }
-}
+};
 
 var projects = {
     "projects": [{
@@ -138,8 +136,7 @@ var projects = {
         $(".project-panel:last").append(formattedFirstProjectDescription);
         // Iterate through the images array in each project
         for (var j = 0; j < projects.projects[0].images.length; j++) {
-            var formattedFirstProjectImage = HTMLfirstProjectImage.replace("%url%",
-                projects.projects[0].url).replace("%data%", projects.projects[0].images[j]);
+            var formattedFirstProjectImage = HTMLfirstProjectImage.replace("%url%", projects.projects[0].url).replace("%data%", projects.projects[0].images[j]);
             $(".project-panel:last").append(formattedFirstProjectImage);
         }
         // Starting from the second project object, iterate through the projects array normally. Class '.active' has already been
@@ -155,34 +152,31 @@ var projects = {
             $(".project-panel:last").append(formattedProjectDescription);
             // Iterate through the images array in each project
             for (var k = 0; k < projects.projects[i].images.length; k++) {
-                var formattedProjectImage = HTMLprojectImage.replace("%url%",
-                    projects.projects[i].url).replace("%data%", projects.projects[i].images[k]);
+                var formattedProjectImage = HTMLprojectImage.replace("%url%", projects.projects[i].url).replace("%data%", projects.projects[i].images[k]);
                 $(".project-panel:last").append(formattedProjectImage);
             }
         }
     }
-}
+};
 
 var education = {
     "schools": [{
-            "start": "2004",
-            "name": "Università degli Studi di Cagliari",
-            "location": "Cagliari, IT",
-            "degree": "MS",
-            "majors": ["Engineering", "Maths", "Computer Science"],
-            "dates": "2004 - 2006",
-            "url": "http://www.unica.it/"
-        }, {
-            "start": "2000",
-            "name": "Università degli Studi di Cagliari",
-            "location": "Cagliari, IT",
-            "degree": "BA",
-            "majors": ["Philosophy", "History", "Literature"],
-            "dates": "2000 - 2004",
-            "url": "http://www.unica.it/"
-        }
-
-    ],
+        "start": "2004",
+        "name": "Università degli Studi di Cagliari",
+        "location": "Cagliari, IT",
+        "degree": "MS",
+        "majors": ["Engineering", "Maths", "Computer Science"],
+        "dates": "2004 - 2006",
+        "url": "http://www.unica.it/"
+    }, {
+        "start": "2000",
+        "name": "Università degli Studi di Cagliari",
+        "location": "Cagliari, IT",
+        "degree": "BA",
+        "majors": ["Philosophy", "History", "Literature"],
+        "dates": "2000 - 2004",
+        "url": "http://www.unica.it/"
+    }],
     "onlineCourses": [{
         "title": "Front End Nanodegree",
         "school": "Udacity",
@@ -201,7 +195,6 @@ var education = {
             $(".education-entry:last").append(formattedSchoolLocation);
             $(".education-entry:last").append(formattedSchoolMajor);
         }
-
         if (education.onlineCourses) {
             $(".education-entry:last").append(HTMLonlineClasses);
             for (var j = 0; j < education.onlineCourses.length; j++) {
@@ -214,7 +207,7 @@ var education = {
             }
         }
     }
-}
+};
 
 // Display each section
 bio.display();
