@@ -22,7 +22,7 @@ var HTMLblog = '<a class="flex-item"><span class="blog-text">blog</span><span cl
 var HTMLmobile = '<span class="phone-text fa fa-phone fa-lg" aria-hidden="true"> %data%</span>';
 var HTMLlocation = '<a class="flex-item"><span class="location-text fa fa-map-marker fa" aria-hidden="true"> %data%</span></a>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLbioPic = '<img src="%data%" class="biopic" alt="bio picture">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<ul id="skills" class="flex-column"></ul>';
@@ -47,8 +47,8 @@ var HTMLfirstProjectDates = '<div class="project-date-text panel active">%data%<
 var HTMLprojectDates = '<div class="project-date-text panel">%data%</div>';
 var HTMLfirstProjectDescription = '<p class="project-description-text project-description panel active">%data%</p>';
 var HTMLprojectDescription = '<p class="project-description-text project-description panel">%data%</p>';
-var HTMLfirstProjectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank" class="a-panel"><img class="img-panel" src="%data%"></a>';
-var HTMLprojectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank"class="a-panel"><img class="img-panel" src="%data%"></a>';
+var HTMLfirstProjectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank" class="a-panel"><img class="img-panel" src="%data%" alt="project picture"></a>';
+var HTMLprojectImage = '<a href="https://daniel-234.github.io/%url%" target="_blank"class="a-panel"><img class="img-panel" src="%data%" alt="project picture"></a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="%url%" target="_blank" class="school-name-text education-link">%data%</a>';
