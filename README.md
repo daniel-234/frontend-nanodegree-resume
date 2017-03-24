@@ -106,6 +106,10 @@ The resume has four distinct sections: work, education, projects and a header wi
 6. It’s possible to make additional information show up when you click on the pins in the map. Check out line 174 in helper.js and the Google Maps API to get started.
 
 
+## Getting Started
+
+To load the app, download a copy of the project to your local machine and open the file index.html with your browser. Alternatively, you can load it online from this [GitHub Pages project repository](https://daniel-234.github.io/frontend-nanodegree-resume/).
+
 ## Acknowledgments
 
 * I wanted to thank author Art Lawry @alistapart for its code and wonderful
